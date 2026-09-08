@@ -1,0 +1,14 @@
+{
+  "checks": {
+    "resultPreserved": true,
+    "escapePreserved": true
+  },
+  "portrait": true,
+  "landscape": true,
+  "audio": {
+    "scheduledSteps": 1,
+    "nodes": 2,
+    "running": "running"
+  },
+  "method": "Synthetic visibility and direct victory setup; browser viewport resize"
+}

@@ -1,0 +1,553 @@
+[
+  {
+    "stage": 1,
+    "deck": [
+      "counter",
+      "rookie"
+    ],
+    "result": "win",
+    "time": 134,
+    "money": 25,
+    "police": 0,
+    "kills": {
+      "normal": 13
+    },
+    "placed": {
+      "counter": 5,
+      "rookie": 9
+    },
+    "bossStage": 0
+  },
+  {
+    "stage": 2,
+    "deck": [
+      "counter",
+      "rookie",
+      "staff"
+    ],
+    "result": "win",
+    "time": 173,
+    "money": 0,
+    "police": 0,
+    "kills": {
+      "normal": 16
+    },
+    "placed": {
+      "counter": 5,
+      "rookie": 9,
+      "staff": 7
+    },
+    "bossStage": 0
+  },
+  {
+    "stage": 3,
+    "deck": [
+      "counter",
+      "rookie",
+      "staff"
+    ],
+    "result": "win",
+    "time": 173,
+    "money": 50,
+    "police": 0,
+    "kills": {
+      "normal": 18
+    },
+    "placed": {
+      "counter": 5,
+      "rookie": 10,
+      "staff": 5
+    },
+    "bossStage": 0
+  },
+  {
+    "stage": 4,
+    "deck": [
+      "counter",
+      "rookie",
+      "staff",
+      "syrup"
+    ],
+    "result": "win",
+    "time": 180,
+    "money": 75,
+    "police": 1,
+    "kills": {
+      "cold": 10,
+      "normal": 10
+    },
+    "placed": {
+      "counter": 7,
+      "rookie": 9,
+      "staff": 6
+    },
+    "bossStage": 0
+  },
+  {
+    "stage": 5,
+    "deck": [
+      "counter",
+      "rookie",
+      "staff",
+      "syrup"
+    ],
+    "result": "win",
+    "time": 281,
+    "money": 825,
+    "police": 0,
+    "kills": {
+      "office": 19,
+      "normal": 9,
+      "cold": 4
+    },
+    "placed": {
+      "counter": 5,
+      "rookie": 10,
+      "syrup": 5,
+      "staff": 5
+    },
+    "bossStage": 0
+  },
+  {
+    "stage": 6,
+    "deck": [
+      "counter",
+      "rookie",
+      "staff",
+      "syrup"
+    ],
+    "result": "win",
+    "time": 291,
+    "money": 775,
+    "police": 0,
+    "kills": {
+      "normal": 12,
+      "office": 14,
+      "bandage": 8
+    },
+    "placed": {
+      "counter": 5,
+      "rookie": 10,
+      "syrup": 5,
+      "staff": 7
+    },
+    "bossStage": 0
+  },
+  {
+    "stage": 7,
+    "deck": [
+      "counter",
+      "rookie",
+      "staff",
+      "syrup",
+      "veteran"
+    ],
+    "result": "win",
+    "time": 285,
+    "money": 100,
+    "police": 0,
+    "kills": {
+      "office": 8,
+      "cold": 8,
+      "bandage": 12,
+      "normal": 13
+    },
+    "placed": {
+      "counter": 5,
+      "rookie": 6,
+      "syrup": 5,
+      "staff": 9,
+      "veteran": 5
+    },
+    "bossStage": 0
+  },
+  {
+    "stage": 8,
+    "deck": [
+      "counter",
+      "rookie",
+      "staff",
+      "syrup",
+      "veteran"
+    ],
+    "result": "win",
+    "time": 286,
+    "money": 450,
+    "police": 0,
+    "kills": {
+      "delivery": 17,
+      "normal": 11,
+      "bandage": 10
+    },
+    "placed": {
+      "counter": 5,
+      "rookie": 5,
+      "syrup": 5,
+      "staff": 6,
+      "veteran": 5
+    },
+    "bossStage": 0
+  },
+  {
+    "stage": 9,
+    "deck": [
+      "counter",
+      "rookie",
+      "staff",
+      "syrup",
+      "veteran",
+      "roller"
+    ],
+    "result": "win",
+    "time": 289,
+    "money": 125,
+    "police": 1,
+    "kills": {
+      "office": 10,
+      "delivery": 11,
+      "normal": 13,
+      "bandage": 6
+    },
+    "placed": {
+      "counter": 7,
+      "rookie": 7,
+      "syrup": 5,
+      "staff": 8,
+      "roller": 5
+    },
+    "bossStage": 0
+  },
+  {
+    "stage": 10,
+    "deck": [
+      "counter",
+      "rookie",
+      "staff",
+      "syrup",
+      "veteran",
+      "roller"
+    ],
+    "result": "win",
+    "time": 353,
+    "money": 375,
+    "police": 0,
+    "kills": {
+      "delivery": 16,
+      "bandage": 16,
+      "cold": 11,
+      "office": 13
+    },
+    "placed": {
+      "counter": 5,
+      "rookie": 5,
+      "syrup": 5,
+      "staff": 6,
+      "veteran": 5,
+      "roller": 5
+    },
+    "bossStage": 0
+  },
+  {
+    "stage": 11,
+    "deck": [
+      "counter",
+      "rookie",
+      "staff",
+      "syrup",
+      "veteran",
+      "roller"
+    ],
+    "result": "win",
+    "time": 348,
+    "money": 150,
+    "police": 0,
+    "kills": {
+      "delivery": 14,
+      "basket": 13,
+      "bandage": 11,
+      "normal": 14
+    },
+    "placed": {
+      "counter": 5,
+      "rookie": 5,
+      "syrup": 6,
+      "staff": 7,
+      "roller": 5,
+      "veteran": 5
+    },
+    "bossStage": 0
+  },
+  {
+    "stage": 12,
+    "deck": [
+      "counter",
+      "rookie",
+      "staff",
+      "syrup",
+      "veteran",
+      "roller"
+    ],
+    "result": "win",
+    "time": 354,
+    "money": 25,
+    "police": 2,
+    "kills": {
+      "office": 12,
+      "normal": 11,
+      "delivery": 13,
+      "basket": 11,
+      "cold": 12
+    },
+    "placed": {
+      "counter": 13,
+      "rookie": 7,
+      "syrup": 5,
+      "staff": 10,
+      "roller": 5,
+      "veteran": 2
+    },
+    "bossStage": 0
+  },
+  {
+    "stage": 13,
+    "deck": [
+      "counter",
+      "rookie",
+      "staff",
+      "syrup",
+      "veteran",
+      "dispenser"
+    ],
+    "result": "win",
+    "time": 355,
+    "money": 150,
+    "police": 0,
+    "kills": {
+      "office": 12,
+      "normal": 20,
+      "basket": 8,
+      "bandage": 16
+    },
+    "placed": {
+      "counter": 5,
+      "rookie": 5,
+      "syrup": 5,
+      "staff": 9,
+      "veteran": 5,
+      "dispenser": 4
+    },
+    "bossStage": 0
+  },
+  {
+    "stage": 14,
+    "deck": [
+      "counter",
+      "rookie",
+      "staff",
+      "syrup",
+      "veteran",
+      "roller"
+    ],
+    "result": "win",
+    "time": 353,
+    "money": 0,
+    "police": 1,
+    "kills": {
+      "drunk": 20,
+      "delivery": 15,
+      "cold": 12,
+      "office": 11
+    },
+    "placed": {
+      "counter": 10,
+      "rookie": 8,
+      "syrup": 6,
+      "staff": 10,
+      "roller": 5,
+      "veteran": 2
+    },
+    "bossStage": 0
+  },
+  {
+    "stage": 15,
+    "deck": [
+      "counter",
+      "rookie",
+      "staff",
+      "syrup",
+      "veteran",
+      "roller"
+    ],
+    "result": "win",
+    "time": 349,
+    "money": 150,
+    "police": 2,
+    "kills": {
+      "complaint": 13,
+      "delivery": 18,
+      "bandage": 16,
+      "basket": 13
+    },
+    "placed": {
+      "counter": 11,
+      "rookie": 7,
+      "syrup": 5,
+      "staff": 11,
+      "roller": 5,
+      "veteran": 1
+    },
+    "bossStage": 0
+  },
+  {
+    "stage": 16,
+    "deck": [
+      "counter",
+      "rookie",
+      "staff",
+      "syrup",
+      "veteran",
+      "roller"
+    ],
+    "result": "win",
+    "time": 458,
+    "money": 1325,
+    "police": 0,
+    "kills": {
+      "delivery": 18,
+      "phone": 15,
+      "normal": 14,
+      "cold": 15
+    },
+    "placed": {
+      "counter": 5,
+      "rookie": 6,
+      "syrup": 5,
+      "staff": 6,
+      "roller": 5,
+      "veteran": 5
+    },
+    "bossStage": 0
+  },
+  {
+    "stage": 17,
+    "deck": [
+      "counter",
+      "rookie",
+      "staff",
+      "syrup",
+      "veteran",
+      "spatula"
+    ],
+    "result": "win",
+    "time": 461,
+    "money": 925,
+    "police": 0,
+    "kills": {
+      "basket": 20,
+      "phone": 10,
+      "drunk": 18,
+      "bandage": 16
+    },
+    "placed": {
+      "counter": 5,
+      "rookie": 5,
+      "syrup": 7,
+      "staff": 12,
+      "spatula": 5,
+      "veteran": 5
+    },
+    "bossStage": 0
+  },
+  {
+    "stage": 18,
+    "deck": [
+      "counter",
+      "rookie",
+      "staff",
+      "syrup",
+      "veteran",
+      "roller"
+    ],
+    "result": "win",
+    "time": 472,
+    "money": 1000,
+    "police": 0,
+    "kills": {
+      "delivery": 21,
+      "cold": 14,
+      "bulky": 17,
+      "bandage": 19
+    },
+    "placed": {
+      "counter": 5,
+      "rookie": 5,
+      "syrup": 7,
+      "staff": 11,
+      "veteran": 5,
+      "roller": 5
+    },
+    "bossStage": 0
+  },
+  {
+    "stage": 19,
+    "deck": [
+      "counter",
+      "rookie",
+      "staff",
+      "syrup",
+      "veteran",
+      "roller"
+    ],
+    "result": "win",
+    "time": 467,
+    "money": 1000,
+    "police": 1,
+    "kills": {
+      "complaint": 25,
+      "cold": 12,
+      "office": 18,
+      "delivery": 13,
+      "bulky": 17
+    },
+    "placed": {
+      "counter": 6,
+      "rookie": 6,
+      "syrup": 5,
+      "staff": 11,
+      "roller": 5,
+      "veteran": 5
+    },
+    "bossStage": 0
+  },
+  {
+    "stage": 20,
+    "deck": [
+      "counter",
+      "rookie",
+      "staff",
+      "syrup",
+      "veteran",
+      "roller"
+    ],
+    "result": "win",
+    "time": 338,
+    "money": 25,
+    "police": 1,
+    "kills": {
+      "cold": 11,
+      "normal": 16,
+      "bandage": 14,
+      "delivery": 24,
+      "office": 9
+    },
+    "placed": {
+      "counter": 6,
+      "rookie": 5,
+      "syrup": 5,
+      "staff": 14,
+      "roller": 5,
+      "veteran": 2
+    },
+    "bossStage": 3
+  }
+]

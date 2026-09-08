@@ -1,0 +1,15 @@
+{
+  "audio": {
+    "state": "running",
+    "voices": 7,
+    "events": [
+      "mortar",
+      "spray",
+      "freeze",
+      "capsule",
+      "bag"
+    ]
+  },
+  "errors": [],
+  "scope": "Browser synthesis and voice allocation only; not a listening test"
+}

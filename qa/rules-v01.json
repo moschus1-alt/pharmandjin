@@ -1,0 +1,122 @@
+[
+  {
+    "name": "돈 수동 수집·중복 획득 방지",
+    "status": "pass"
+  },
+  {
+    "name": "자금 부족·점유 칸은 차감하지 않음",
+    "status": "pass"
+  },
+  {
+    "name": "카드 쿨다운은 재배치와 분리",
+    "status": "pass"
+  },
+  {
+    "name": "닫힌 레인·튜토리얼 직접 행동",
+    "status": "pass"
+  },
+  {
+    "name": "퇴근 도장 생성·공격 예약 제거",
+    "status": "pass"
+  },
+  {
+    "name": "초보약사 발사와 실제 피해",
+    "status": "pass"
+  },
+  {
+    "name": "베테랑 2연사 실제 두 발",
+    "status": "pass"
+  },
+  {
+    "name": "직원은 무공격 탱커",
+    "status": "pass"
+  },
+  {
+    "name": "알바 준비 전 제거는 피해 없음",
+    "status": "pass"
+  },
+  {
+    "name": "알바 준비 이후 1회 범위 공격",
+    "status": "pass"
+  },
+  {
+    "name": "시럽 감속과 시간 해제",
+    "status": "pass"
+  },
+  {
+    "name": "관통은 대상마다 1회 피해",
+    "status": "pass"
+  },
+  {
+    "name": "자동조제 유효 레인 0",
+    "status": "pass"
+  },
+  {
+    "name": "자동조제 유효 레인 2",
+    "status": "pass"
+  },
+  {
+    "name": "자동조제 유효 레인 4",
+    "status": "pass"
+  },
+  {
+    "name": "연고칼 사거리 제한",
+    "status": "pass"
+  },
+  {
+    "name": "장바구니 선파괴·초과 피해",
+    "status": "pass"
+  },
+  {
+    "name": "감기구름 아군 공격속도 상태",
+    "status": "pass"
+  },
+  {
+    "name": "진상 방해·대사·재적용 저항",
+    "status": "pass"
+  },
+  {
+    "name": "스마트폰 가속 예고",
+    "status": "pass"
+  },
+  {
+    "name": "일시정지 전체 상태 불변",
+    "status": "pass"
+  },
+  {
+    "name": "경찰 1회·출동 중 중복 돌파·재돌파 패배",
+    "status": "pass"
+  },
+  {
+    "name": "경찰은 레인별 독립",
+    "status": "pass"
+  },
+  {
+    "name": "보스 경찰 구제·큰 피해·생존",
+    "status": "pass"
+  },
+  {
+    "name": "보스 65%·30% 페이즈 정확히 한 번",
+    "status": "pass"
+  },
+  {
+    "name": "보스 큰 피해에서도 필수 페이즈 보존",
+    "status": "pass"
+  },
+  {
+    "name": "Stage 10 쿨다운 혼선·돈 보존",
+    "status": "pass"
+  },
+  {
+    "name": "Stage 19 강탈 없음·후속 웨이브",
+    "status": "pass"
+  },
+  {
+    "name": "20스테이지 데이터·ID·레인·해금 순서",
+    "status": "pass"
+  },
+  {
+    "name": "재시작 돈·경찰·타이머 독립",
+    "status": "pass"
+  }
+]

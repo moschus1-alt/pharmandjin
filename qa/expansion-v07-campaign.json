@@ -1,0 +1,715 @@
+[
+  {
+    "stage": 1,
+    "seed": 1979,
+    "result": "win",
+    "time": 79.16666666666346,
+    "deck": [
+      "counter",
+      "rookie"
+    ],
+    "stats": {
+      "placed": {
+        "counter": 5,
+        "rookie": 6
+      },
+      "killed": {
+        "normal": 8
+      },
+      "collected": 26,
+      "police": 0,
+      "shots": 80,
+      "damage": 1600
+    },
+    "cleared": 1,
+    "inputs": 37,
+    "bossStage": 0,
+    "method": "Normal DOM pointer events; fixed presentation steps; x2 simulation; sampled rendering during accelerated QA"
+  },
+  {
+    "stage": 2,
+    "seed": 3958,
+    "result": "win",
+    "time": 125.89999999999414,
+    "deck": [
+      "counter",
+      "rookie",
+      "staff"
+    ],
+    "stats": {
+      "placed": {
+        "counter": 5,
+        "rookie": 6,
+        "staff": 7
+      },
+      "killed": {
+        "normal": 12
+      },
+      "collected": 47,
+      "police": 0,
+      "shots": 120,
+      "damage": 2400
+    },
+    "cleared": 2,
+    "inputs": 65,
+    "bossStage": 0,
+    "method": "Normal DOM pointer events; fixed presentation steps; x2 simulation; sampled rendering during accelerated QA"
+  },
+  {
+    "stage": 3,
+    "seed": 5937,
+    "result": "win",
+    "time": 97.84999999999573,
+    "deck": [
+      "counter",
+      "rookie",
+      "staff",
+      "temp"
+    ],
+    "stats": {
+      "placed": {
+        "counter": 5,
+        "rookie": 3,
+        "staff": 5,
+        "temp": 2
+      },
+      "killed": {
+        "normal": 14
+      },
+      "collected": 35,
+      "police": 0,
+      "shots": 62,
+      "damage": 4800
+    },
+    "cleared": 3,
+    "inputs": 50,
+    "bossStage": 0,
+    "method": "Normal DOM pointer events; fixed presentation steps; x2 simulation; sampled rendering during accelerated QA"
+  },
+  {
+    "stage": 4,
+    "seed": 7916,
+    "result": "win",
+    "time": 147.41666666667612,
+    "deck": [
+      "counter",
+      "rookie",
+      "staff",
+      "syrup"
+    ],
+    "stats": {
+      "placed": {
+        "counter": 5,
+        "rookie": 7,
+        "syrup": 2,
+        "staff": 5
+      },
+      "killed": {
+        "normal": 8,
+        "cold": 9
+      },
+      "collected": 52,
+      "police": 0,
+      "shots": 186,
+      "damage": 3580
+    },
+    "cleared": 4,
+    "inputs": 71,
+    "bossStage": 0,
+    "method": "Normal DOM pointer events; fixed presentation steps; x2 simulation; sampled rendering during accelerated QA"
+  },
+  {
+    "stage": 5,
+    "seed": 9895,
+    "result": "win",
+    "time": 199.03333333338387,
+    "deck": [
+      "counter",
+      "rookie",
+      "staff",
+      "syrup"
+    ],
+    "stats": {
+      "placed": {
+        "counter": 6,
+        "rookie": 10,
+        "syrup": 3,
+        "staff": 5
+      },
+      "killed": {
+        "normal": 6,
+        "office": 17,
+        "cold": 3
+      },
+      "collected": 75,
+      "police": 1,
+      "shots": 248,
+      "damage": 4220
+    },
+    "cleared": 5,
+    "inputs": 116,
+    "bossStage": 0,
+    "method": "Normal DOM pointer events; fixed presentation steps; x2 simulation; sampled rendering during accelerated QA"
+  },
+  {
+    "stage": 6,
+    "seed": 11874,
+    "result": "win",
+    "time": 224.88333333340444,
+    "deck": [
+      "counter",
+      "rookie",
+      "staff",
+      "syrup"
+    ],
+    "stats": {
+      "placed": {
+        "counter": 6,
+        "rookie": 10,
+        "syrup": 5,
+        "staff": 6
+      },
+      "killed": {
+        "normal": 10,
+        "bandage": 7,
+        "office": 13
+      },
+      "collected": 84,
+      "police": 1,
+      "shots": 351,
+      "damage": 6050
+    },
+    "cleared": 6,
+    "inputs": 128,
+    "bossStage": 0,
+    "method": "Normal DOM pointer events; fixed presentation steps; x2 simulation; sampled rendering during accelerated QA"
+  },
+  {
+    "stage": 7,
+    "seed": 13853,
+    "result": "win",
+    "time": 258.3166666667604,
+    "deck": [
+      "counter",
+      "rookie",
+      "staff",
+      "syrup",
+      "veteran"
+    ],
+    "stats": {
+      "placed": {
+        "counter": 7,
+        "rookie": 7,
+        "syrup": 5,
+        "staff": 5,
+        "veteran": 4
+      },
+      "killed": {
+        "office": 7,
+        "bandage": 12,
+        "cold": 5,
+        "normal": 13
+      },
+      "collected": 95,
+      "police": 1,
+      "shots": 498,
+      "damage": 8000
+    },
+    "cleared": 7,
+    "inputs": 125,
+    "bossStage": 0,
+    "method": "Normal DOM pointer events; fixed presentation steps; x2 simulation; sampled rendering during accelerated QA"
+  },
+  {
+    "stage": 8,
+    "seed": 15832,
+    "result": "win",
+    "time": 286.16666666673507,
+    "deck": [
+      "counter",
+      "rookie",
+      "staff",
+      "syrup",
+      "veteran"
+    ],
+    "stats": {
+      "placed": {
+        "counter": 5,
+        "rookie": 5,
+        "syrup": 5,
+        "staff": 5,
+        "veteran": 5
+      },
+      "killed": {
+        "delivery": 17,
+        "normal": 11,
+        "bandage": 10
+      },
+      "collected": 110,
+      "police": 0,
+      "shots": 599,
+      "damage": 9390
+    },
+    "cleared": 8,
+    "inputs": 135,
+    "bossStage": 0,
+    "method": "Normal DOM pointer events; fixed presentation steps; x2 simulation; sampled rendering during accelerated QA"
+  },
+  {
+    "stage": 9,
+    "seed": 17811,
+    "result": "win",
+    "time": 291.2833333333971,
+    "deck": [
+      "counter",
+      "rookie",
+      "staff",
+      "syrup",
+      "veteran",
+      "roller"
+    ],
+    "stats": {
+      "placed": {
+        "counter": 6,
+        "rookie": 7,
+        "syrup": 8,
+        "staff": 9,
+        "roller": 2,
+        "veteran": 1
+      },
+      "killed": {
+        "office": 10,
+        "delivery": 11,
+        "normal": 13,
+        "bandage": 6
+      },
+      "collected": 111,
+      "police": 1,
+      "shots": 316,
+      "damage": 5830
+    },
+    "cleared": 9,
+    "inputs": 161,
+    "bossStage": 0,
+    "method": "Normal DOM pointer events; fixed presentation steps; x2 simulation; sampled rendering during accelerated QA"
+  },
+  {
+    "stage": 10,
+    "seed": 19790,
+    "result": "win",
+    "time": 353.1500000000075,
+    "deck": [
+      "counter",
+      "rookie",
+      "staff",
+      "syrup",
+      "veteran",
+      "roller"
+    ],
+    "stats": {
+      "placed": {
+        "counter": 5,
+        "rookie": 5,
+        "syrup": 5,
+        "staff": 5,
+        "roller": 5,
+        "veteran": 5
+      },
+      "killed": {
+        "delivery": 16,
+        "bandage": 16,
+        "office": 13,
+        "cold": 11
+      },
+      "collected": 137,
+      "police": 0,
+      "shots": 848,
+      "damage": 14500
+    },
+    "cleared": 10,
+    "inputs": 167,
+    "bossStage": 0,
+    "method": "Normal DOM pointer events; fixed presentation steps; x2 simulation; sampled rendering during accelerated QA"
+  },
+  {
+    "stage": 11,
+    "seed": 21769,
+    "result": "win",
+    "time": 348.28333333334524,
+    "deck": [
+      "counter",
+      "rookie",
+      "staff",
+      "syrup",
+      "veteran",
+      "roller"
+    ],
+    "stats": {
+      "placed": {
+        "counter": 5,
+        "rookie": 5,
+        "syrup": 5,
+        "staff": 6,
+        "veteran": 5,
+        "roller": 5
+      },
+      "killed": {
+        "delivery": 14,
+        "basket": 13,
+        "normal": 14,
+        "bandage": 11
+      },
+      "collected": 135,
+      "police": 0,
+      "shots": 882,
+      "damage": 14600
+    },
+    "cleared": 11,
+    "inputs": 166,
+    "bossStage": 0,
+    "method": "Normal DOM pointer events; fixed presentation steps; x2 simulation; sampled rendering during accelerated QA"
+  },
+  {
+    "stage": 12,
+    "seed": 23748,
+    "result": "win",
+    "time": 353.2500000000074,
+    "deck": [
+      "counter",
+      "rookie",
+      "staff",
+      "syrup",
+      "veteran",
+      "roller"
+    ],
+    "stats": {
+      "placed": {
+        "counter": 6,
+        "rookie": 5,
+        "syrup": 5,
+        "staff": 5,
+        "veteran": 5,
+        "roller": 5
+      },
+      "killed": {
+        "office": 12,
+        "normal": 9,
+        "delivery": 15,
+        "basket": 12,
+        "cold": 11
+      },
+      "collected": 137,
+      "police": 1,
+      "shots": 673,
+      "damage": 11180
+    },
+    "cleared": 12,
+    "inputs": 169,
+    "bossStage": 0,
+    "method": "Normal DOM pointer events; fixed presentation steps; x2 simulation; sampled rendering during accelerated QA"
+  },
+  {
+    "stage": 13,
+    "seed": 25727,
+    "result": "win",
+    "time": 354.1333333333399,
+    "deck": [
+      "counter",
+      "rookie",
+      "staff",
+      "syrup",
+      "veteran",
+      "dispenser"
+    ],
+    "stats": {
+      "placed": {
+        "counter": 5,
+        "rookie": 5,
+        "syrup": 5,
+        "staff": 8,
+        "veteran": 5,
+        "dispenser": 4
+      },
+      "killed": {
+        "normal": 20,
+        "office": 12,
+        "basket": 8,
+        "bandage": 16
+      },
+      "collected": 137,
+      "police": 0,
+      "shots": 1052,
+      "damage": 16296
+    },
+    "cleared": 13,
+    "inputs": 169,
+    "bossStage": 0,
+    "method": "Normal DOM pointer events; fixed presentation steps; x2 simulation; sampled rendering during accelerated QA"
+  },
+  {
+    "stage": 14,
+    "seed": 27706,
+    "result": "win",
+    "time": 349.8000000000105,
+    "deck": [
+      "counter",
+      "rookie",
+      "staff",
+      "syrup",
+      "veteran",
+      "roller"
+    ],
+    "stats": {
+      "placed": {
+        "counter": 6,
+        "rookie": 6,
+        "syrup": 5,
+        "staff": 7,
+        "roller": 5,
+        "veteran": 5
+      },
+      "killed": {
+        "drunk": 20,
+        "cold": 12,
+        "office": 11,
+        "delivery": 15
+      },
+      "collected": 134,
+      "police": 1,
+      "shots": 670,
+      "damage": 10910
+    },
+    "cleared": 14,
+    "inputs": 169,
+    "bossStage": 0,
+    "method": "Normal DOM pointer events; fixed presentation steps; x2 simulation; sampled rendering during accelerated QA"
+  },
+  {
+    "stage": 15,
+    "seed": 29685,
+    "result": "win",
+    "time": 348.28333333334524,
+    "deck": [
+      "counter",
+      "rookie",
+      "staff",
+      "syrup",
+      "veteran",
+      "roller"
+    ],
+    "stats": {
+      "placed": {
+        "counter": 5,
+        "rookie": 5,
+        "syrup": 5,
+        "staff": 9,
+        "veteran": 5,
+        "roller": 5
+      },
+      "killed": {
+        "delivery": 18,
+        "complaint": 13,
+        "bandage": 16,
+        "basket": 13
+      },
+      "collected": 135,
+      "police": 0,
+      "shots": 1105,
+      "damage": 19900
+    },
+    "cleared": 15,
+    "inputs": 169,
+    "bossStage": 0,
+    "method": "Normal DOM pointer events; fixed presentation steps; x2 simulation; sampled rendering during accelerated QA"
+  },
+  {
+    "stage": 16,
+    "seed": 31664,
+    "result": "win",
+    "time": 458.29999999991185,
+    "deck": [
+      "counter",
+      "rookie",
+      "staff",
+      "syrup",
+      "veteran",
+      "roller"
+    ],
+    "stats": {
+      "placed": {
+        "counter": 6,
+        "rookie": 5,
+        "syrup": 5,
+        "staff": 5,
+        "roller": 5,
+        "veteran": 5
+      },
+      "killed": {
+        "delivery": 18,
+        "phone": 15,
+        "normal": 14,
+        "cold": 15
+      },
+      "collected": 177,
+      "police": 1,
+      "shots": 757,
+      "damage": 11180
+    },
+    "cleared": 16,
+    "inputs": 225,
+    "bossStage": 0,
+    "method": "Normal DOM pointer events; fixed presentation steps; x2 simulation; sampled rendering during accelerated QA"
+  },
+  {
+    "stage": 17,
+    "seed": 33643,
+    "result": "win",
+    "time": 461.5166666665756,
+    "deck": [
+      "counter",
+      "rookie",
+      "staff",
+      "syrup",
+      "veteran",
+      "spatula"
+    ],
+    "stats": {
+      "placed": {
+        "counter": 5,
+        "rookie": 5,
+        "syrup": 5,
+        "staff": 8,
+        "spatula": 5,
+        "veteran": 5
+      },
+      "killed": {
+        "basket": 20,
+        "phone": 10,
+        "drunk": 18,
+        "bandage": 16
+      },
+      "collected": 178,
+      "police": 0,
+      "shots": 1319,
+      "damage": 20870
+    },
+    "cleared": 17,
+    "inputs": 211,
+    "bossStage": 0,
+    "method": "Normal DOM pointer events; fixed presentation steps; x2 simulation; sampled rendering during accelerated QA"
+  },
+  {
+    "stage": 18,
+    "seed": 35622,
+    "result": "win",
+    "time": 472.3333333332324,
+    "deck": [
+      "counter",
+      "rookie",
+      "staff",
+      "syrup",
+      "veteran",
+      "roller"
+    ],
+    "stats": {
+      "placed": {
+        "counter": 5,
+        "rookie": 5,
+        "syrup": 6,
+        "staff": 7,
+        "roller": 5,
+        "veteran": 5
+      },
+      "killed": {
+        "delivery": 21,
+        "cold": 14,
+        "bandage": 19,
+        "bulky": 17
+      },
+      "collected": 183,
+      "police": 0,
+      "shots": 1567,
+      "damage": 28750
+    },
+    "cleared": 18,
+    "inputs": 216,
+    "bossStage": 0,
+    "method": "Normal DOM pointer events; fixed presentation steps; x2 simulation; sampled rendering during accelerated QA"
+  },
+  {
+    "stage": 19,
+    "seed": 37601,
+    "result": "win",
+    "time": 466.5333333332377,
+    "deck": [
+      "counter",
+      "rookie",
+      "staff",
+      "syrup",
+      "veteran",
+      "roller"
+    ],
+    "stats": {
+      "placed": {
+        "counter": 5,
+        "rookie": 5,
+        "syrup": 11,
+        "staff": 14,
+        "roller": 5,
+        "veteran": 5
+      },
+      "killed": {
+        "complaint": 25,
+        "cold": 12,
+        "office": 18,
+        "delivery": 13,
+        "bulky": 17
+      },
+      "collected": 181,
+      "police": 0,
+      "shots": 1685,
+      "damage": 31640
+    },
+    "cleared": 19,
+    "inputs": 226,
+    "bossStage": 0,
+    "method": "Normal DOM pointer events; fixed presentation steps; x2 simulation; sampled rendering during accelerated QA"
+  },
+  {
+    "stage": 20,
+    "seed": 39580,
+    "result": "win",
+    "time": 115.38333333332807,
+    "deck": [
+      "counter",
+      "rookie",
+      "staff",
+      "syrup",
+      "veteran",
+      "roller"
+    ],
+    "stats": {
+      "placed": {
+        "counter": 5,
+        "rookie": 5,
+        "syrup": 1,
+        "staff": 4
+      },
+      "killed": {
+        "cold": 3,
+        "normal": 2,
+        "bandage": 3,
+        "delivery": 7,
+        "boss": 1
+      },
+      "collected": 35,
+      "police": 1,
+      "shots": 155,
+      "damage": 2660
+    },
+    "cleared": 20,
+    "inputs": 51,
+    "bossStage": 1,
+    "method": "Normal DOM pointer events; fixed presentation steps; x2 simulation; sampled rendering during accelerated QA"
+  }
+]
