@@ -51,8 +51,8 @@ const recipes=[
  ['잠깐 이야기 좀','마감 직전',['complaint','bulky','delivery','cold','office'],'평범하지 않은 방문, 마지막 전조.'],
  ['FINAL NIGHT','새벽',['normal','office','cold','bandage','delivery'],'왕진상 좀비 · 최종 근무']
 ];
-export const EARLY_PACING={1:{duration:85,first:8,count:9},2:{duration:110,first:10,count:12},3:{duration:125,first:10,count:14},4:{duration:150,first:12,count:17},5:{duration:210,first:14,count:26},6:{duration:235,first:16,count:30},7:{duration:250,first:16,count:32}};
-export const TUTORIAL_PACING={sideFirst:8,sideSecond:16,openFive:23,finalDelay:5,finalCount:5,finalGap:5};
+export const EARLY_PACING={1:{duration:85,first:8,count:9},2:{duration:90,first:5,count:12},3:{duration:105,first:6,count:14},4:{duration:125,first:7,count:17},5:{duration:165,first:8,count:26},6:{duration:235,first:16,count:30},7:{duration:250,first:16,count:32}};
+export const TUTORIAL_PACING={sideFirst:6,sideSecond:13,openFive:19,finalDelay:4,finalCount:5,finalGap:5};
 export const STAGES=recipes.map((r,i)=>({id:i+1,title:r[0],weather:r[1],types:r[2],hint:r[3],world:i<7?0:i<15?1:2,duration:EARLY_PACING[i+1]?.duration??(i<9?300:i<15?370:480),initialMoney:i<15?250:300,event:i===9?'sales':i===18?'landlord':null,unlock:UNITS.filter(u=>u.unlock===i+2).map(u=>u.id)}));
 export const BALANCE={move:12.5,enemyDamage:25,enemyAttack:1,bulkyDamage:70,bulkyAttack:1.5,projectileSpeed:410,slowDuration:3,slowFactor:.6,bossHP:5000,bossDamage:60,bossAttack:1.8,bossPoliceDamage:.2,coinLife:15};
 export const BOARD={x:176,y:225,col:100,row:76,cols:8,lanes:5,end:137,spawn:1130};
