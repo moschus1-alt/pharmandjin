@@ -1,0 +1,10 @@
+{
+  "viewport": "640x360",
+  "selectionRemoveBlocksStart": true,
+  "selectionAddRestoresStart": true,
+  "stage5Flags": 4,
+  "pauseFreezesTime": true,
+  "resumeRetainsFlags": true,
+  "pageErrors": [],
+  "ruleAndCampaignTests": true
+}
