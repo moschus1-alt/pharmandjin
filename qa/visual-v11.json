@@ -1,0 +1,47 @@
+[
+  {
+    "size": [
+      640,
+      360
+    ],
+    "placed": [
+      [
+        "rookie",
+        0,
+        0
+      ]
+    ],
+    "minCard": 44.09375,
+    "overflow": false
+  },
+  {
+    "size": [
+      844,
+      390
+    ],
+    "placed": [
+      [
+        "rookie",
+        0,
+        0
+      ]
+    ],
+    "minCard": 48.140625,
+    "overflow": false
+  },
+  {
+    "size": [
+      1366,
+      768
+    ],
+    "placed": [
+      [
+        "rookie",
+        0,
+        0
+      ]
+    ],
+    "minCard": 98.171875,
+    "overflow": false
+  }
+]
