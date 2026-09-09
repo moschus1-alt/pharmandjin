@@ -1,0 +1,48 @@
+{
+  "audioMetrics": [
+    {
+      "mode": "hub",
+      "seconds": 41.751063829787235,
+      "rawPeak": 0.37744051218032837,
+      "rms": 0.06398734252350687,
+      "previewGain": 2.119539302706825
+    },
+    {
+      "mode": "world0",
+      "seconds": 35.18571428571428,
+      "rawPeak": 0.37885499000549316,
+      "rms": 0.06221870959266498,
+      "previewGain": 2.1116258756111423
+    },
+    {
+      "mode": "world1",
+      "seconds": 31.86774193548387,
+      "rawPeak": 0.3649650514125824,
+      "rms": 0.05929839600171714,
+      "previewGain": 2.19199070405134
+    },
+    {
+      "mode": "world2",
+      "seconds": 40.9,
+      "rawPeak": 0.37846606969833374,
+      "rms": 0.06855528471398037,
+      "previewGain": 2.113795830198625
+    },
+    {
+      "mode": "boss",
+      "seconds": 29.99090909090909,
+      "rawPeak": 0.3084542155265808,
+      "rms": 0.06136072671573153,
+      "previewGain": 2.593577781500803
+    },
+    {
+      "mode": "ending",
+      "seconds": 43.56666666666666,
+      "rawPeak": 0.3565988540649414,
+      "rms": 0.07034239688367401,
+      "previewGain": 2.2434171924016035
+    }
+  ],
+  "errors": [],
+  "note": "Preview gain normalized; in-game follows user volume. PCM inspection is not a human listening assessment."
+}

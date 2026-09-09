@@ -1,0 +1,16 @@
+{
+  "paused": {
+    "blocked": true,
+    "musicVoices": 0,
+    "effectVoices": 0
+  },
+  "restart": {
+    "resumed": {
+      "steps": 1,
+      "blocked": false
+    },
+    "voices": 6,
+    "theme": "hub"
+  },
+  "errors": []
+}
