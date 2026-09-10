@@ -1,5 +1,5 @@
-import {score} from './music.js';
-import {MusicRack} from './instruments.js';
+import {score} from './music.js?v=33';
+import {MusicRack} from './instruments.js?v=33';
 export class AudioManager{
  constructor(settings){this.settings=settings;this.nodes=new Set();this.mode='hub';this.layer=0;this.step=0;this.next=0;this.blocked=false;this.last={};}
  start(){if(!this.ctx){this.ctx=new (window.AudioContext||window.webkitAudioContext)();this.master=this.ctx.createGain();this.music=this.ctx.createGain();this.effects=this.ctx.createGain();this.music.connect(this.master);this.effects.connect(this.master);this.compressor=this.ctx.createDynamicsCompressor();this.compressor.threshold.value=-12;this.compressor.knee.value=12;this.compressor.ratio.value=4;this.compressor.attack.value=.006;this.compressor.release.value=.18;this.master.connect(this.compressor);this.compressor.connect(this.ctx.destination);this.rack=new MusicRack(this.ctx,this.music);this.apply();}if(this.ctx.state==='suspended')this.ctx.resume().catch(()=>{});this.next=Math.max(this.next,this.ctx.currentTime+.05);}

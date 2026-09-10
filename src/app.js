@@ -1,6 +1,6 @@
-import {L} from './ko.js';
-import {MAX_DECK,UNITS,ENEMIES,U,E,STAGES,WORLDS,TEXT,TUTORIAL_PACING as T,BOARD as G} from './data.js';
-import {Simulation} from './sim.js';import {SaveStore} from './save.js';import {AudioManager} from './audio.js';import {Renderer} from './render.js';
+import {L} from './ko.js?v=33';
+import {MAX_DECK,UNITS,ENEMIES,U,E,STAGES,WORLDS,TEXT,TUTORIAL_PACING as T,BOARD as G} from './data.js?v=33';
+import {Simulation} from './sim.js?v=33';import {SaveStore} from './save.js?v=33';import {AudioManager} from './audio.js?v=33';import {Renderer} from './render.js?v=33';
 const $=s=>document.querySelector(s),esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const query=new URLSearchParams(location.search),test=query.has('test');
 class App{
