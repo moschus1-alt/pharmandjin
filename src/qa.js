@@ -1,4 +1,4 @@
-import {Simulation} from './sim.js?v=34';import {UNITS,U,BALANCE,STAGES,makeWaves} from './data.js?v=34';
+import {Simulation} from './sim.js?v=35';import {UNITS,U,BALANCE,STAGES,makeWaves} from './data.js?v=35';
 export function runRules(){let results=[];let check=(name,f)=>{try{f();results.push({name,status:'pass'});}catch(e){results.push({name,status:'fail',detail:e.message});}};let assert=(x,m='assertion failed')=>{if(!x)throw Error(m);};let newSim=(deck=['counter','rookie'])=>{let s=new Simulation(2,deck,23,{tutorial:false});s.money=250;return s;};let tick=(s,t)=>{for(let i=0;i<Math.ceil(t*60);i++)s.step(1/60);};
  check('0자금 하늘돈 수집·낙하·일시정지',()=>{let s=new Simulation(2,['counter','rookie']);assert(s.money===0);tick(s,3.2);assert(s.coins.length===2&&s.money===0);let y=s.coins[0].y;s.pauses.add('test');tick(s,1);assert(s.coins[0].y===y);s.pauses.clear();for(let c of s.coins)s.collect(c.id);assert(s.money===50&&s.place('counter',0,2));});
  check('모든 전투 레인 등장 보장 1900시드',()=>{for(let stage of STAGES.slice(1))for(let seed=0;seed<100;seed++)assert(new Set(makeWaves(stage,seed).map(w=>w.lane)).size===5,'stage '+stage.id+' seed '+seed);});

@@ -1,8 +1,8 @@
-import {L} from './ko.js?v=34';
-import {U,E,UNITS,BOARD as G,TEXT} from './data.js?v=34';
+import {L} from './ko.js?v=35';
+import {U,E,UNITS,BOARD as G,TEXT} from './data.js?v=35';
 export class Renderer{
  constructor(canvas){this.canvas=canvas;this.ctx=canvas.getContext('2d');this.images={};this.thumbs={};this.hubTap=null;}
- async load(){this.manifest=await (await fetch('assets/manifest.json?v=34')).json();for(let f of ['allies-v1.png','characters-v1.png','pharmacies-v1.png','ending-v1.png','extra-units-v1.png','pharmacy-interior-v15.png','armored-zombie-v31.png']){let im=new Image();im.src='assets/'+f;await im.decode();this.images[f]=im;}for(let u of UNITS)this.thumbs[u.id]=this.thumb(u.artFile||'allies-v1.png',u.art);this.thumbs.armored=this.thumb('armored-zombie-v31.png',0);for(let i=0;i<16;i++)this.thumbs['e'+i]=this.thumb('characters-v1.png',i);}
+ async load(){this.manifest=await (await fetch('assets/manifest.json?v=35')).json();for(let f of ['allies-v1.png','characters-v1.png','pharmacies-v1.png','ending-v1.png','extra-units-v1.png','pharmacy-interior-v15.png','armored-zombie-v31.png']){let im=new Image();im.src='assets/'+f;await im.decode();this.images[f]=im;}for(let u of UNITS)this.thumbs[u.id]=this.thumb(u.artFile||'allies-v1.png',u.art);this.thumbs.armored=this.thumb('armored-zombie-v31.png',0);for(let i=0;i<16;i++)this.thumbs['e'+i]=this.thumb('characters-v1.png',i);}
  thumb(file,i){let r=this.manifest[file].rects[i],c=document.createElement('canvas');c.width=100;c.height=112;let ct=c.getContext('2d'),s=Math.min(90/r.w,104/r.h);ct.drawImage(this.images[file],r.x,r.y,r.w,r.h,(100-r.w*s)/2,108-r.h*s,r.w*s,r.h*s);return c.toDataURL();}
  resize(w,h,dpr){this.canvas.width=Math.round(w*dpr);this.canvas.height=Math.round(h*dpr);this.canvas.style.width=w+'px';this.canvas.style.height=h+'px';this.ctx.setTransform(this.canvas.width/1200,0,0,this.canvas.height/675,0,0);}
  rect(x,y,w,h,color,r=0){let c=this.ctx;c.fillStyle=color;c.beginPath();c.roundRect(x,y,w,h,r);c.fill();}
