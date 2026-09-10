@@ -4,17 +4,18 @@ export const UNITS=[
  {id:'rookie',name:'초보약사',short:'초보약사',role:'기본 공격',desc:'같은 레인 20 · 1.4초마다',cost:100,hp:300,cd:7.5,period:1.4,damage:20,unlock:1,art:1},
  {id:'staff',name:'직원',short:'직원',role:'방어',desc:'HP 1200 · 붙잡고 실랑이',cost:75,hp:1200,cd:15,period:1,damage:0,unlock:2,art:2},
  {id:'temp',name:'알바약사',short:'알바약사',role:'1회용 범위',desc:'2.5초 준비 · 범위 피해 450',cost:100,hp:300,cd:35,period:2.5,damage:450,unlock:3,art:3},
- {id:'syrup',name:'시럽병',short:'시럽병',role:'감속',desc:'10 피해 · 3초간 40% 감속',cost:100,hp:300,cd:10,period:1.8,damage:10,unlock:4,art:4},
- {id:'veteran',name:'베테랑약사',short:'베테랑',role:'2연사',desc:'20 × 2연사 · 단일 레인 화력',cost:175,hp:300,cd:10,period:1.4,damage:20,unlock:7,art:5},
+ {id:'syrup',name:'시럽병',short:'시럽병',role:'감속',desc:'10 피해 · 3초간 40% 감속',cost:75,hp:300,cd:10,period:1.8,damage:10,unlock:4,art:4},
+ {id:'veteran',name:'베테랑약사',short:'베테랑',role:'2연사',desc:'18 × 2연사 · 1.6초 주기',cost:200,hp:300,cd:12,period:1.6,damage:18,unlock:7,art:5},
  {id:'roller',name:'돌돌이포장기',short:'돌돌이',role:'관통',desc:'같은 레인 여러 적에게 30',cost:150,hp:400,cd:12,period:2,damage:30,unlock:9,art:6},
  {id:'dispenser',name:'자동조제기',short:'자동조제',role:'3레인',desc:'위·현재·아래 각각 12',cost:200,hp:500,cd:15,period:1.8,damage:12,unlock:13,art:7},
  {id:'spatula',name:'연고칼',short:'연고칼',role:'근접 화력',desc:'전방 1칸 · 0.8초마다 45',cost:125,hp:500,cd:10,period:.8,damage:45,unlock:17,art:8},
  {id:'mortar',name:'절구',short:'절구',role:'곡사 고화력',desc:'고HP 적 우선 · 곡사 90 / 3.2초',cost:175,hp:400,cd:12,period:3.2,damage:90,unlock:3,art:0,artFile:'extra-units-v1.png'},
  {id:'spray',name:'에프킬라',short:'에프킬라',role:'근거리 부채꼴',desc:'앞쪽 2칸 · 이웃 레인까지 18',cost:125,hp:450,cd:12,period:1.2,damage:18,unlock:5,art:1,artFile:'extra-units-v1.png'},
- {id:'icepack',name:'냉찜질팩',short:'냉찜질팩',role:'1회용 빙결',desc:'2초 준비 · 주변 60 피해 + 2.5초 정지',cost:100,hp:300,cd:25,period:2,damage:60,unlock:8,art:2,artFile:'extra-units-v1.png'},
+ {id:'icepack',name:'냉찜질팩',short:'냉찜질팩',role:'1회용 빙결',desc:'2초 준비 · 주변 60 피해 + 2.5초 정지',cost:75,hp:300,cd:25,period:2,damage:60,unlock:8,art:2,artFile:'extra-units-v1.png'},
  {id:'capsule',name:'캡슐연사기',short:'캡슐연사',role:'고속 연사',desc:'한 레인 7 피해 · 0.25초 주기',cost:175,hp:350,cd:15,period:.25,damage:7,unlock:11,art:3,artFile:'extra-units-v1.png'},
- {id:'bag',name:'약봉투발사기',short:'약봉투발사',role:'착탄 범위',desc:'착탄 지점 주변 60 · 3초 주기',cost:225,hp:400,cd:15,period:3,damage:60,unlock:14,art:4,artFile:'extra-units-v1.png'}
+ {id:'bag',name:'약봉투발사기',short:'약봉투발사',role:'착탄 범위',desc:'착탄 지점 주변 60 · 3초 주기',cost:200,hp:400,cd:15,period:3,damage:60,unlock:14,art:4,artFile:'extra-units-v1.png'}
 ];
+for(const unit of UNITS)unit.tip={"counter":"초반 경제 확보 · 설치 후 나오는 돈을 직접 수집","rookie":"저렴한 첫 방어 · 여러 레인을 먼저 지킬 때","staff":"앞에서 버티기 · 근거리 공격 유닛을 뒤에 배치","temp":"밀집 러시를 한 번에 처리 · 2.5초 전에 준비","syrup":"빠른 적을 늦추기 · 공격 유닛과 함께 사용","veteran":"좁은 공간에 화력 집중 · 자원 효율은 초보약사 우세","roller":"한 줄로 몰리는 적 관통 · 적이 한 명이면 비효율","dispenser":"인접 세 줄을 보조 · 한 줄 집중 방어에는 약함","spatula":"직원 뒤에서 근접 고화력 · 멀리 있는 적은 못 공격","mortar":"튼튼한 적 우선 타격 · 느린 곡사로 빠른 적에 불리","spray":"앞쪽 여러 레인에 분사 · 직원과 함께 전방 배치","icepack":"돌파 직전 적을 멈추기 · 화력보다 시간 확보","capsule":"빠른 연속 사격 · 적은 HP가 남은 적도 빠르게 처리","bag":"여러 줄 밀집 적에 폭발 · 흩어진 적에게 비효율"}[unit.id];
 export const ENEMIES=[
  {id:'normal',name:'일반 좀비',hp:200,speed:1,art:0,first:1,desc:'기본 전진형'},
  {id:'cold',name:'감기 좀비',hp:220,speed:1,art:1,first:4,desc:'감기구름 · 공격속도 방해'},
@@ -66,5 +67,8 @@ export function makeWaves(stage,seed){const rand=rng(seed),list=[];if(stage.id==
  if(stage.id===5)for(let i=list.length-8;i<list.length;i++){list[i].at=stage.duration-38+(i-list.length+8)*2.4;list[i].type='office';list[i].lane=i%5;}
  if(stage.id===12)for(let i=list.length-20;i<list.length;i++){list[i].at=stage.duration-48+(i-list.length+20)*1.1;list[i].type=stage.types[i%stage.types.length];list[i].lane=i%5;}
  if([7,12,18,19].includes(stage.id))for(let l=0;l<5;l++)list.push({at:stage.duration-28+l*.2,type:stage.types[l%stage.types.length],lane:l,group:groups});
+ // Cover every lane by redistributing existing late arrivals, without adding enemies.
+ let counts=Array.from({length:5},(_,lane)=>list.filter(w=>w.lane===lane).length);
+ for(let lane=0;lane<5;lane++)if(!counts[lane]){let candidates=list.filter((w,i)=>i>=Math.min(3,list.length-5)&&counts[w.lane]>1).sort((a,b)=>counts[b.lane]-counts[a.lane]||b.at-a.at);let w=candidates[0];if(w){counts[w.lane]--;w.lane=lane;counts[lane]++;}}
  return list.sort((a,b)=>a.at-b.at);
 }
