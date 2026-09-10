@@ -10,7 +10,7 @@ export const UNITS=[
  {id:'dispenser',name:'자동조제기',short:'자동조제',role:'3레인',desc:'위·현재·아래 각각 12',cost:200,hp:500,cd:15,period:1.8,damage:12,unlock:13,art:7},
  {id:'spatula',name:'연고칼',short:'연고칼',role:'근접 화력',desc:'전방 1칸 · 0.8초마다 45',cost:125,hp:500,cd:10,period:.8,damage:45,unlock:17,art:8},
  {id:'mortar',name:'절구',short:'절구',role:'곡사 고화력',desc:'고HP 적 우선 · 곡사 90 / 3.2초',cost:175,hp:400,cd:12,period:3.2,damage:90,unlock:3,art:0,artFile:'extra-units-v1.png'},
- {id:'spray',name:'분무기',short:'분무기',role:'근거리 부채꼴',desc:'앞쪽 2칸 · 이웃 레인까지 18',cost:125,hp:450,cd:12,period:1.2,damage:18,unlock:5,art:1,artFile:'extra-units-v1.png'},
+ {id:'spray',name:'에프킬라',short:'에프킬라',role:'근거리 부채꼴',desc:'앞쪽 2칸 · 이웃 레인까지 18',cost:125,hp:450,cd:12,period:1.2,damage:18,unlock:5,art:1,artFile:'extra-units-v1.png'},
  {id:'icepack',name:'냉찜질팩',short:'냉찜질팩',role:'1회용 빙결',desc:'2초 준비 · 주변 60 피해 + 2.5초 정지',cost:100,hp:300,cd:25,period:2,damage:60,unlock:8,art:2,artFile:'extra-units-v1.png'},
  {id:'capsule',name:'캡슐연사기',short:'캡슐연사',role:'고속 연사',desc:'한 레인 7 피해 · 0.25초 주기',cost:175,hp:350,cd:15,period:.25,damage:7,unlock:11,art:3,artFile:'extra-units-v1.png'},
  {id:'bag',name:'약봉투발사기',short:'약봉투발사',role:'착탄 범위',desc:'착탄 지점 주변 60 · 3초 주기',cost:225,hp:400,cd:15,period:3,damage:60,unlock:14,art:4,artFile:'extra-units-v1.png'}
@@ -51,7 +51,7 @@ const recipes=[
  ['잠깐 이야기 좀','마감 직전',['complaint','bulky','delivery','cold','office'],'평범하지 않은 방문, 마지막 전조.'],
  ['FINAL NIGHT','새벽',['normal','office','cold','bandage','delivery'],'왕진상 좀비 · 최종 근무']
 ];
-export const EARLY_PACING={1:{duration:85,first:8,count:9},2:{duration:90,first:5,count:12},3:{duration:105,first:6,count:14},4:{duration:125,first:7,count:17},5:{duration:165,first:8,count:26},6:{duration:235,first:16,count:30},7:{duration:250,first:16,count:32}};
+export const EARLY_PACING={1:{duration:85,first:8,count:9},2:{duration:100,first:18,count:8},3:{duration:115,first:18,count:10},4:{duration:135,first:16,count:13},5:{duration:165,first:16,count:20},6:{duration:235,first:16,count:30},7:{duration:250,first:16,count:32}};
 export const TUTORIAL_PACING={sideFirst:6,sideSecond:13,openFive:19,finalDelay:4,finalCount:5,finalGap:5};
 export const STAGES=recipes.map((r,i)=>({id:i+1,title:r[0],weather:r[1],types:r[2],hint:r[3],world:i<7?0:i<15?1:2,duration:EARLY_PACING[i+1]?.duration??(i<9?300:i<15?370:480),initialMoney:0,event:i===9?'sales':i===18?'landlord':null,unlock:UNITS.filter(u=>u.unlock===i+2).map(u=>u.id)}));
 export const SKY_MONEY={first:1,openingGap:2,openingUntil:2,minGap:10,maxGap:14,value:25,fallSpeed:38};
@@ -61,9 +61,9 @@ export const EARLY_CHAT={lines:['우박세트 주세요','후시딘 마데카솔
 export const TEXT={pause:'일시정지',win:'영업 방어 성공!',lose:'오늘 영업은 여기까지…',lunch:'점심시간입니다! 직장인들이 몰려옵니다!',children:'어린이집 하원시간입니다!',sales:'원장님이 혈압약 바꾸신대요!',landlord:'우리 약대생 아들이 이번에 졸업을 하니 약국 빼주세요.',rush:'정신없는 사이 좀비들이 몰려옵니다!',boss2:'여기 책임자 누구예요?',boss3:'인터넷에는 그렇게 안 나오던데요?',ko:'…그럼 다른 약국 갈게요.',customer:'저기요, 약 좀 물어보려고 하는데요.',end:'…오늘도 영업합니다.',police:'112 출동! 전원 함께 가시죠!',complaints:['저번에는 해줬는데요?','약이 왜 이렇게 비싸요?','인터넷에서는 그렇게 안 나오던데요?'],tutorial:['하늘에서 내려오는 돈을 눌러 50을 모은 뒤 판매대를 놓으세요.','판매대에서 나온 돈을 직접 터치해요!','돈을 100까지 모아 초보약사를 같은 줄에 배치해요.','잘했어요! 돈을 모으며 가운데 세 줄을 지켜요.','이제 다섯 줄! 각 레인에 약사를 준비하세요.']};
 export function rng(seed){return()=>{seed|=0;seed=seed+0x6D2B79F5|0;let t=Math.imul(seed^seed>>>15,1|seed);t=t+Math.imul(t^t>>>7,61|t)^t;return((t^t>>>14)>>>0)/4294967296;};}
 export function makeWaves(stage,seed){const rand=rng(seed),list=[];if(stage.id===1)return list;const groups=stage.id<5?3:stage.id<10?4:stage.id<16?5:6;const count=EARLY_PACING[stage.id]?.count??(stage.id<10?22+stage.id*2:30+stage.id*2);const first=EARLY_PACING[stage.id]?.first??30;
- for(let n=0;n<count;n++){let p=n/(count-1),g=Math.floor(p*(groups-.01)),at=first+p*(stage.duration-25-first),lane=Math.floor(rand()*5),type=stage.types[n===0?0:Math.floor(rand()*stage.types.length)];if(stage.id===2&&n<2)lane=2;if(stage.id===9&&n%4<3)lane=2;if(stage.id===5&&p>.65)type='office';if(stage.id===13&&n<12){type=n%2?'office':'normal';lane=1+n%3;}if(n===0&&['bandage','delivery','basket','drunk','complaint','phone','bulky'].includes(stage.types[0]))type=stage.types[0];list.push({at,type,lane,group:g});}
- if(stage.id===3)for(let i=list.length-6;i<list.length;i++){list[i].at=stage.duration-55+(i-list.length+6)*2.2;list[i].lane=2;}
- if(stage.id===5)for(let i=list.length-12;i<list.length;i++){list[i].at=stage.duration-44+(i-list.length+12)*1.3;list[i].type='office';list[i].lane=i%5;}
+ for(let n=0;n<count;n++){let p=n/(count-1),g=Math.floor(p*(groups-.01)),at=first+p*(stage.duration-25-first),lane=Math.floor(rand()*5),type=stage.types[n===0?0:Math.floor(rand()*stage.types.length)];if(stage.id>=2&&stage.id<=5){let opening=stage.id<=3?4:3;if(n<opening)lane=2;else if(stage.id===2||p<.7)lane=[1,2,3][n%3];}if(stage.id===9&&n%4<3)lane=2;if(stage.id===5&&p>.65)type='office';if(stage.id===13&&n<12){type=n%2?'office':'normal';lane=1+n%3;}if(n===0&&['bandage','delivery','basket','drunk','complaint','phone','bulky'].includes(stage.types[0]))type=stage.types[0];list.push({at,type,lane,group:g});}
+ if(stage.id===3)for(let i=list.length-4;i<list.length;i++){list[i].at=stage.duration-38+(i-list.length+4)*3.5;list[i].lane=2;}
+ if(stage.id===5)for(let i=list.length-8;i<list.length;i++){list[i].at=stage.duration-38+(i-list.length+8)*2.4;list[i].type='office';list[i].lane=i%5;}
  if(stage.id===12)for(let i=list.length-20;i<list.length;i++){list[i].at=stage.duration-48+(i-list.length+20)*1.1;list[i].type=stage.types[i%stage.types.length];list[i].lane=i%5;}
  if([7,12,18,19].includes(stage.id))for(let l=0;l<5;l++)list.push({at:stage.duration-28+l*.2,type:stage.types[l%stage.types.length],lane:l,group:groups});
  return list.sort((a,b)=>a.at-b.at);
