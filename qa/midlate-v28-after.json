@@ -1,0 +1,917 @@
+[
+  {
+    "stage": 8,
+    "special": "veteran",
+    "seed": 0,
+    "result": "win",
+    "police": 0,
+    "time": 287,
+    "phases": [
+      0
+    ],
+    "placed": 5
+  },
+  {
+    "stage": 8,
+    "special": "veteran",
+    "seed": 31,
+    "result": "win",
+    "police": 1,
+    "time": 287,
+    "phases": [
+      0
+    ],
+    "placed": 5
+  },
+  {
+    "stage": 8,
+    "special": "veteran",
+    "seed": 97,
+    "result": "win",
+    "police": 1,
+    "time": 279,
+    "phases": [
+      0
+    ],
+    "placed": 5
+  },
+  {
+    "stage": 8,
+    "special": "mortar",
+    "seed": 0,
+    "result": "win",
+    "police": 0,
+    "time": 286,
+    "phases": [
+      0
+    ],
+    "placed": 5
+  },
+  {
+    "stage": 8,
+    "special": "mortar",
+    "seed": 31,
+    "result": "win",
+    "police": 1,
+    "time": 286,
+    "phases": [
+      0
+    ],
+    "placed": 5
+  },
+  {
+    "stage": 8,
+    "special": "mortar",
+    "seed": 97,
+    "result": "win",
+    "police": 1,
+    "time": 278,
+    "phases": [
+      0
+    ],
+    "placed": 5
+  },
+  {
+    "stage": 8,
+    "special": "spray",
+    "seed": 0,
+    "result": "win",
+    "police": 0,
+    "time": 303,
+    "phases": [
+      0
+    ],
+    "placed": 5
+  },
+  {
+    "stage": 8,
+    "special": "spray",
+    "seed": 31,
+    "result": "win",
+    "police": 1,
+    "time": 300,
+    "phases": [
+      0
+    ],
+    "placed": 5
+  },
+  {
+    "stage": 8,
+    "special": "spray",
+    "seed": 97,
+    "result": "win",
+    "police": 1,
+    "time": 285,
+    "phases": [
+      0
+    ],
+    "placed": 5
+  },
+  {
+    "stage": 9,
+    "special": "veteran",
+    "seed": 0,
+    "result": "win",
+    "police": 0,
+    "time": 285,
+    "phases": [
+      0
+    ],
+    "placed": 3
+  },
+  {
+    "stage": 9,
+    "special": "veteran",
+    "seed": 31,
+    "result": "win",
+    "police": 0,
+    "time": 288,
+    "phases": [
+      0
+    ],
+    "placed": 5
+  },
+  {
+    "stage": 9,
+    "special": "veteran",
+    "seed": 97,
+    "result": "win",
+    "police": 1,
+    "time": 289,
+    "phases": [
+      0
+    ],
+    "placed": 4
+  },
+  {
+    "stage": 9,
+    "special": "mortar",
+    "seed": 0,
+    "result": "win",
+    "police": 0,
+    "time": 280,
+    "phases": [
+      0
+    ],
+    "placed": 5
+  },
+  {
+    "stage": 9,
+    "special": "mortar",
+    "seed": 31,
+    "result": "win",
+    "police": 0,
+    "time": 286,
+    "phases": [
+      0
+    ],
+    "placed": 5
+  },
+  {
+    "stage": 9,
+    "special": "mortar",
+    "seed": 97,
+    "result": "win",
+    "police": 1,
+    "time": 285,
+    "phases": [
+      0
+    ],
+    "placed": 5
+  },
+  {
+    "stage": 9,
+    "special": "spray",
+    "seed": 0,
+    "result": "win",
+    "police": 0,
+    "time": 294,
+    "phases": [
+      0
+    ],
+    "placed": 5
+  },
+  {
+    "stage": 9,
+    "special": "spray",
+    "seed": 31,
+    "result": "win",
+    "police": 0,
+    "time": 302,
+    "phases": [
+      0
+    ],
+    "placed": 5
+  },
+  {
+    "stage": 9,
+    "special": "spray",
+    "seed": 97,
+    "result": "win",
+    "police": 0,
+    "time": 288,
+    "phases": [
+      0
+    ],
+    "placed": 6
+  },
+  {
+    "stage": 12,
+    "special": "veteran",
+    "seed": 0,
+    "result": "win",
+    "police": 1,
+    "time": 356,
+    "phases": [
+      0
+    ],
+    "placed": 5
+  },
+  {
+    "stage": 12,
+    "special": "veteran",
+    "seed": 31,
+    "result": "win",
+    "police": 0,
+    "time": 356,
+    "phases": [
+      0
+    ],
+    "placed": 5
+  },
+  {
+    "stage": 12,
+    "special": "veteran",
+    "seed": 97,
+    "result": "win",
+    "police": 0,
+    "time": 356,
+    "phases": [
+      0
+    ],
+    "placed": 5
+  },
+  {
+    "stage": 12,
+    "special": "mortar",
+    "seed": 0,
+    "result": "win",
+    "police": 1,
+    "time": 355,
+    "phases": [
+      0
+    ],
+    "placed": 5
+  },
+  {
+    "stage": 12,
+    "special": "mortar",
+    "seed": 31,
+    "result": "win",
+    "police": 0,
+    "time": 355,
+    "phases": [
+      0
+    ],
+    "placed": 5
+  },
+  {
+    "stage": 12,
+    "special": "mortar",
+    "seed": 97,
+    "result": "win",
+    "police": 0,
+    "time": 355,
+    "phases": [
+      0
+    ],
+    "placed": 5
+  },
+  {
+    "stage": 12,
+    "special": "spray",
+    "seed": 0,
+    "result": "win",
+    "police": 1,
+    "time": 365,
+    "phases": [
+      0
+    ],
+    "placed": 5
+  },
+  {
+    "stage": 12,
+    "special": "spray",
+    "seed": 31,
+    "result": "win",
+    "police": 0,
+    "time": 366,
+    "phases": [
+      0
+    ],
+    "placed": 5
+  },
+  {
+    "stage": 12,
+    "special": "spray",
+    "seed": 97,
+    "result": "win",
+    "police": 0,
+    "time": 366,
+    "phases": [
+      0
+    ],
+    "placed": 6
+  },
+  {
+    "stage": 12,
+    "special": "capsule",
+    "seed": 0,
+    "result": "win",
+    "police": 1,
+    "time": 355,
+    "phases": [
+      0
+    ],
+    "placed": 5
+  },
+  {
+    "stage": 12,
+    "special": "capsule",
+    "seed": 31,
+    "result": "win",
+    "police": 0,
+    "time": 355,
+    "phases": [
+      0
+    ],
+    "placed": 5
+  },
+  {
+    "stage": 12,
+    "special": "capsule",
+    "seed": 97,
+    "result": "win",
+    "police": 0,
+    "time": 355,
+    "phases": [
+      0
+    ],
+    "placed": 5
+  },
+  {
+    "stage": 15,
+    "special": "veteran",
+    "seed": 0,
+    "result": "win",
+    "police": 1,
+    "time": 348,
+    "phases": [
+      0
+    ],
+    "placed": 5
+  },
+  {
+    "stage": 15,
+    "special": "veteran",
+    "seed": 31,
+    "result": "win",
+    "police": 1,
+    "time": 355,
+    "phases": [
+      0
+    ],
+    "placed": 5
+  },
+  {
+    "stage": 15,
+    "special": "veteran",
+    "seed": 97,
+    "result": "win",
+    "police": 1,
+    "time": 355,
+    "phases": [
+      0
+    ],
+    "placed": 5
+  },
+  {
+    "stage": 15,
+    "special": "mortar",
+    "seed": 0,
+    "result": "win",
+    "police": 1,
+    "time": 348,
+    "phases": [
+      0
+    ],
+    "placed": 5
+  },
+  {
+    "stage": 15,
+    "special": "mortar",
+    "seed": 31,
+    "result": "win",
+    "police": 1,
+    "time": 352,
+    "phases": [
+      0
+    ],
+    "placed": 5
+  },
+  {
+    "stage": 15,
+    "special": "mortar",
+    "seed": 97,
+    "result": "win",
+    "police": 1,
+    "time": 353,
+    "phases": [
+      0
+    ],
+    "placed": 5
+  },
+  {
+    "stage": 15,
+    "special": "spray",
+    "seed": 0,
+    "result": "win",
+    "police": 1,
+    "time": 354,
+    "phases": [
+      0
+    ],
+    "placed": 5
+  },
+  {
+    "stage": 15,
+    "special": "spray",
+    "seed": 31,
+    "result": "win",
+    "police": 1,
+    "time": 367,
+    "phases": [
+      0
+    ],
+    "placed": 5
+  },
+  {
+    "stage": 15,
+    "special": "spray",
+    "seed": 97,
+    "result": "win",
+    "police": 1,
+    "time": 365,
+    "phases": [
+      0
+    ],
+    "placed": 5
+  },
+  {
+    "stage": 15,
+    "special": "capsule",
+    "seed": 0,
+    "result": "win",
+    "police": 1,
+    "time": 349,
+    "phases": [
+      0
+    ],
+    "placed": 5
+  },
+  {
+    "stage": 15,
+    "special": "capsule",
+    "seed": 31,
+    "result": "win",
+    "police": 1,
+    "time": 355,
+    "phases": [
+      0
+    ],
+    "placed": 5
+  },
+  {
+    "stage": 15,
+    "special": "capsule",
+    "seed": 97,
+    "result": "win",
+    "police": 1,
+    "time": 355,
+    "phases": [
+      0
+    ],
+    "placed": 5
+  },
+  {
+    "stage": 15,
+    "special": "bag",
+    "seed": 0,
+    "result": "win",
+    "police": 1,
+    "time": 350,
+    "phases": [
+      0
+    ],
+    "placed": 5
+  },
+  {
+    "stage": 15,
+    "special": "bag",
+    "seed": 31,
+    "result": "win",
+    "police": 1,
+    "time": 350,
+    "phases": [
+      0
+    ],
+    "placed": 5
+  },
+  {
+    "stage": 15,
+    "special": "bag",
+    "seed": 97,
+    "result": "win",
+    "police": 1,
+    "time": 355,
+    "phases": [
+      0
+    ],
+    "placed": 5
+  },
+  {
+    "stage": 18,
+    "special": "veteran",
+    "seed": 0,
+    "result": "win",
+    "police": 0,
+    "time": 479,
+    "phases": [
+      0
+    ],
+    "placed": 5
+  },
+  {
+    "stage": 18,
+    "special": "veteran",
+    "seed": 31,
+    "result": "win",
+    "police": 1,
+    "time": 489,
+    "phases": [
+      0
+    ],
+    "placed": 5
+  },
+  {
+    "stage": 18,
+    "special": "veteran",
+    "seed": 97,
+    "result": "win",
+    "police": 1,
+    "time": 495,
+    "phases": [
+      0
+    ],
+    "placed": 5
+  },
+  {
+    "stage": 18,
+    "special": "mortar",
+    "seed": 0,
+    "result": "win",
+    "police": 0,
+    "time": 475,
+    "phases": [
+      0
+    ],
+    "placed": 5
+  },
+  {
+    "stage": 18,
+    "special": "mortar",
+    "seed": 31,
+    "result": "win",
+    "police": 1,
+    "time": 481,
+    "phases": [
+      0
+    ],
+    "placed": 5
+  },
+  {
+    "stage": 18,
+    "special": "mortar",
+    "seed": 97,
+    "result": "win",
+    "police": 1,
+    "time": 489,
+    "phases": [
+      0
+    ],
+    "placed": 5
+  },
+  {
+    "stage": 18,
+    "special": "spray",
+    "seed": 0,
+    "result": "win",
+    "police": 0,
+    "time": 490,
+    "phases": [
+      0
+    ],
+    "placed": 5
+  },
+  {
+    "stage": 18,
+    "special": "spray",
+    "seed": 31,
+    "result": "win",
+    "police": 1,
+    "time": 500,
+    "phases": [
+      0
+    ],
+    "placed": 5
+  },
+  {
+    "stage": 18,
+    "special": "spray",
+    "seed": 97,
+    "result": "win",
+    "police": 1,
+    "time": 509,
+    "phases": [
+      0
+    ],
+    "placed": 5
+  },
+  {
+    "stage": 18,
+    "special": "capsule",
+    "seed": 0,
+    "result": "win",
+    "police": 0,
+    "time": 478,
+    "phases": [
+      0
+    ],
+    "placed": 5
+  },
+  {
+    "stage": 18,
+    "special": "capsule",
+    "seed": 31,
+    "result": "win",
+    "police": 1,
+    "time": 487,
+    "phases": [
+      0
+    ],
+    "placed": 5
+  },
+  {
+    "stage": 18,
+    "special": "capsule",
+    "seed": 97,
+    "result": "win",
+    "police": 1,
+    "time": 494,
+    "phases": [
+      0
+    ],
+    "placed": 5
+  },
+  {
+    "stage": 18,
+    "special": "bag",
+    "seed": 0,
+    "result": "win",
+    "police": 0,
+    "time": 473,
+    "phases": [
+      0
+    ],
+    "placed": 5
+  },
+  {
+    "stage": 18,
+    "special": "bag",
+    "seed": 31,
+    "result": "win",
+    "police": 1,
+    "time": 473,
+    "phases": [
+      0
+    ],
+    "placed": 5
+  },
+  {
+    "stage": 18,
+    "special": "bag",
+    "seed": 97,
+    "result": "win",
+    "police": 1,
+    "time": 479,
+    "phases": [
+      0
+    ],
+    "placed": 5
+  },
+  {
+    "stage": 20,
+    "special": "veteran",
+    "seed": 0,
+    "result": "win",
+    "police": 1,
+    "time": 109,
+    "phases": [
+      0,
+      1
+    ],
+    "placed": 0
+  },
+  {
+    "stage": 20,
+    "special": "veteran",
+    "seed": 31,
+    "result": "win",
+    "police": 1,
+    "time": 85,
+    "phases": [
+      0,
+      1
+    ],
+    "placed": 0
+  },
+  {
+    "stage": 20,
+    "special": "veteran",
+    "seed": 97,
+    "result": "win",
+    "police": 1,
+    "time": 107,
+    "phases": [
+      0,
+      1
+    ],
+    "placed": 0
+  },
+  {
+    "stage": 20,
+    "special": "mortar",
+    "seed": 0,
+    "result": "win",
+    "police": 1,
+    "time": 109,
+    "phases": [
+      0,
+      1
+    ],
+    "placed": 0
+  },
+  {
+    "stage": 20,
+    "special": "mortar",
+    "seed": 31,
+    "result": "win",
+    "police": 1,
+    "time": 85,
+    "phases": [
+      0,
+      1
+    ],
+    "placed": 0
+  },
+  {
+    "stage": 20,
+    "special": "mortar",
+    "seed": 97,
+    "result": "win",
+    "police": 1,
+    "time": 107,
+    "phases": [
+      0,
+      1
+    ],
+    "placed": 0
+  },
+  {
+    "stage": 20,
+    "special": "spray",
+    "seed": 0,
+    "result": "win",
+    "police": 1,
+    "time": 109,
+    "phases": [
+      0,
+      1
+    ],
+    "placed": 0
+  },
+  {
+    "stage": 20,
+    "special": "spray",
+    "seed": 31,
+    "result": "win",
+    "police": 1,
+    "time": 85,
+    "phases": [
+      0,
+      1
+    ],
+    "placed": 0
+  },
+  {
+    "stage": 20,
+    "special": "spray",
+    "seed": 97,
+    "result": "win",
+    "police": 1,
+    "time": 107,
+    "phases": [
+      0,
+      1
+    ],
+    "placed": 0
+  },
+  {
+    "stage": 20,
+    "special": "capsule",
+    "seed": 0,
+    "result": "win",
+    "police": 1,
+    "time": 109,
+    "phases": [
+      0,
+      1
+    ],
+    "placed": 0
+  },
+  {
+    "stage": 20,
+    "special": "capsule",
+    "seed": 31,
+    "result": "win",
+    "police": 1,
+    "time": 85,
+    "phases": [
+      0,
+      1
+    ],
+    "placed": 0
+  },
+  {
+    "stage": 20,
+    "special": "capsule",
+    "seed": 97,
+    "result": "win",
+    "police": 1,
+    "time": 107,
+    "phases": [
+      0,
+      1
+    ],
+    "placed": 0
+  },
+  {
+    "stage": 20,
+    "special": "bag",
+    "seed": 0,
+    "result": "win",
+    "police": 1,
+    "time": 109,
+    "phases": [
+      0,
+      1
+    ],
+    "placed": 0
+  },
+  {
+    "stage": 20,
+    "special": "bag",
+    "seed": 31,
+    "result": "win",
+    "police": 1,
+    "time": 85,
+    "phases": [
+      0,
+      1
+    ],
+    "placed": 0
+  },
+  {
+    "stage": 20,
+    "special": "bag",
+    "seed": 97,
+    "result": "win",
+    "police": 1,
+    "time": 107,
+    "phases": [
+      0,
+      1
+    ],
+    "placed": 0
+  }
+]

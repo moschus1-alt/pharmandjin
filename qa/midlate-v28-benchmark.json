@@ -1,0 +1,164 @@
+[
+  {
+    "type": "rookie",
+    "scene": "single",
+    "cost": 100,
+    "damage": 160
+  },
+  {
+    "type": "rookie",
+    "scene": "line",
+    "cost": 100,
+    "damage": 160
+  },
+  {
+    "type": "rookie",
+    "scene": "adjacent",
+    "cost": 100,
+    "damage": 160
+  },
+  {
+    "type": "veteran",
+    "scene": "single",
+    "cost": 200,
+    "damage": 252
+  },
+  {
+    "type": "veteran",
+    "scene": "line",
+    "cost": 200,
+    "damage": 252
+  },
+  {
+    "type": "veteran",
+    "scene": "adjacent",
+    "cost": 200,
+    "damage": 252
+  },
+  {
+    "type": "mortar",
+    "scene": "single",
+    "cost": 175,
+    "damage": 270
+  },
+  {
+    "type": "mortar",
+    "scene": "line",
+    "cost": 175,
+    "damage": 270
+  },
+  {
+    "type": "mortar",
+    "scene": "adjacent",
+    "cost": 175,
+    "damage": 270
+  },
+  {
+    "type": "spray",
+    "scene": "single",
+    "cost": 125,
+    "damage": 162
+  },
+  {
+    "type": "spray",
+    "scene": "line",
+    "cost": 125,
+    "damage": 486
+  },
+  {
+    "type": "spray",
+    "scene": "adjacent",
+    "cost": 125,
+    "damage": 486
+  },
+  {
+    "type": "capsule",
+    "scene": "single",
+    "cost": 175,
+    "damage": 259
+  },
+  {
+    "type": "capsule",
+    "scene": "line",
+    "cost": 175,
+    "damage": 259
+  },
+  {
+    "type": "capsule",
+    "scene": "adjacent",
+    "cost": 175,
+    "damage": 259
+  },
+  {
+    "type": "bag",
+    "scene": "single",
+    "cost": 200,
+    "damage": 240
+  },
+  {
+    "type": "bag",
+    "scene": "line",
+    "cost": 200,
+    "damage": 720
+  },
+  {
+    "type": "bag",
+    "scene": "adjacent",
+    "cost": 200,
+    "damage": 720
+  },
+  {
+    "type": "roller",
+    "scene": "single",
+    "cost": 150,
+    "damage": 180
+  },
+  {
+    "type": "roller",
+    "scene": "line",
+    "cost": 150,
+    "damage": 510
+  },
+  {
+    "type": "roller",
+    "scene": "adjacent",
+    "cost": 150,
+    "damage": 180
+  },
+  {
+    "type": "dispenser",
+    "scene": "single",
+    "cost": 200,
+    "damage": 72
+  },
+  {
+    "type": "dispenser",
+    "scene": "line",
+    "cost": 200,
+    "damage": 72
+  },
+  {
+    "type": "dispenser",
+    "scene": "adjacent",
+    "cost": 200,
+    "damage": 216
+  },
+  {
+    "type": "syrup",
+    "scene": "single",
+    "cost": 75,
+    "damage": 60
+  },
+  {
+    "type": "syrup",
+    "scene": "line",
+    "cost": 75,
+    "damage": 60
+  },
+  {
+    "type": "syrup",
+    "scene": "adjacent",
+    "cost": 75,
+    "damage": 60
+  }
+]

@@ -69,7 +69,9 @@ export function makeWaves(stage,seed){const rand=rng(seed),list=[];if(stage.id==
  if(stage.id===5)for(let i=list.length-8;i<list.length;i++){list[i].at=stage.duration-38+(i-list.length+8)*2.4;list[i].type='office';list[i].lane=i%5;}
  if(stage.id===12)for(let i=list.length-20;i<list.length;i++){list[i].at=stage.duration-48+(i-list.length+20)*1.1;list[i].type=stage.types[i%stage.types.length];list[i].lane=i%5;}
  if([7,12,18,19].includes(stage.id))for(let l=0;l<5;l++)list.push({at:stage.duration-28+l*.2,type:stage.types[l%stage.types.length],lane:l,group:groups});
- if(stage.requiredUnit){let armor=list.filter(w=>w.type==='armored');if(!armor.length)list[Math.floor(list.length*.55)].type='armored';for(let i=0;i<Math.min(4,list.length);i++)if(list[i].type==='armored')list[i].type=stage.types[0];}
+ // Introduce the counter enemy in paced, predictable encounters.
+ if(stage.requiredUnit){for(let w of list)if(w.type==='armored')w.type=stage.types[0];let limit=stage.id===9?2:stage.id===10?3:4,last=-Infinity,used=0;for(let i=Math.floor(list.length*.35);i<list.length&&used<limit;i++){let w=list[i];if(w.at>=last+14){w.type='armored';last=w.at;used++;}}}
+
  // Cover every lane by redistributing existing late arrivals, without adding enemies.
  let counts=Array.from({length:5},(_,lane)=>list.filter(w=>w.lane===lane).length);
  for(let lane=0;lane<5;lane++)if(!counts[lane]){let candidates=list.filter((w,i)=>i>=Math.min(3,list.length-5)&&counts[w.lane]>1).sort((a,b)=>counts[b.lane]-counts[a.lane]||b.at-a.at);let w=candidates[0];if(w){counts[w.lane]--;w.lane=lane;counts[lane]++;}}
