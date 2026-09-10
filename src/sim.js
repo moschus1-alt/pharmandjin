@@ -5,7 +5,7 @@ export class Simulation{
  drain(){return this.events.splice(0);}
  get activeLanes(){return this.tutorial>=0&&this.tutorial<3?[2]:this.tutorial===3?[1,2,3]:[0,1,2,3,4];}
  get dangerLanes(){return this.police.flatMap((p,l)=>p.used&&!p.active&&this.enemies.some(z=>z.hp>0&&z.lane===l&&z.x<370)?[l]:[]);}
- callPolice(){if(this.policeUsed)return false;this.policeUsed=true;this.stats.police=1;this.arrest={elapsed:0,duration:3.2,people:this.enemies.filter(z=>z.hp>0).map(z=>({...z})),boss:this.enemies.some(z=>z.type==='boss'&&z.hp>0)};for(let p of this.police){p.used=true;p.active=3.2;}for(let z of this.enemies)this.stats.killed[z.type]=(this.stats.killed[z.type]||0)+1;this.enemies=[];this.shots=[];this.emit('sound',{name:'police'});this.emit('banner',{text:TEXT.police});return true;}
+ callPolice(){if(this.policeUsed)return false;this.policeUsed=true;this.stats.police=1;this.arrest={elapsed:0,duration:4.8,people:this.enemies.filter(z=>z.hp>0).map(z=>({...z})),boss:this.enemies.some(z=>z.type==='boss'&&z.hp>0)};for(let p of this.police){p.used=true;p.active=this.arrest.duration;}for(let z of this.enemies)this.stats.killed[z.type]=(this.stats.killed[z.type]||0)+1;this.enemies=[];this.shots=[];this.emit('sound',{name:'police'});this.emit('banner',{text:TEXT.police});return true;}
  get progress(){return this.stage.id===20&&this.boss?1-this.boss.hp/B.bossHP:Math.min(1,this.time/this.stage.duration);}
  get stopped(){return this.result||this.pauses.size||this.awaiting;}
  point(col,lane){return {x:G.x+col*G.col+G.col/2,y:G.y+lane*G.row+G.row*.84};}
