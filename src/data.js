@@ -54,7 +54,7 @@ const recipes=[
 export const EARLY_PACING={1:{duration:85,first:8,count:9},2:{duration:90,first:5,count:12},3:{duration:105,first:6,count:14},4:{duration:125,first:7,count:17},5:{duration:165,first:8,count:26},6:{duration:235,first:16,count:30},7:{duration:250,first:16,count:32}};
 export const TUTORIAL_PACING={sideFirst:6,sideSecond:13,openFive:19,finalDelay:4,finalCount:5,finalGap:5};
 export const STAGES=recipes.map((r,i)=>({id:i+1,title:r[0],weather:r[1],types:r[2],hint:r[3],world:i<7?0:i<15?1:2,duration:EARLY_PACING[i+1]?.duration??(i<9?300:i<15?370:480),initialMoney:0,event:i===9?'sales':i===18?'landlord':null,unlock:UNITS.filter(u=>u.unlock===i+2).map(u=>u.id)}));
-export const SKY_MONEY={first:1,openingGap:2,openingUntil:18,minGap:4,maxGap:7,value:25,fallSpeed:90};
+export const SKY_MONEY={first:1,openingGap:2,openingUntil:2,minGap:10,maxGap:14,value:25,fallSpeed:38};
 export const BALANCE={move:12.5,enemyDamage:25,enemyAttack:1,bulkyDamage:70,bulkyAttack:1.5,projectileSpeed:410,slowDuration:3,slowFactor:.6,bossHP:5000,bossDamage:60,bossAttack:1.8,bossPoliceDamage:.2,coinLife:15};
 export const BOARD={x:176,y:225,col:100,row:76,cols:8,lanes:5,end:137,spawn:1130};
 export const TEXT={pause:'일시정지',win:'영업 방어 성공!',lose:'오늘 영업은 여기까지…',lunch:'점심시간입니다! 직장인들이 몰려옵니다!',children:'어린이집 하원시간입니다!',sales:'원장님이 혈압약 바꾸신대요!',landlord:'우리 약대생 아들이 이번에 졸업을 하니 약국 빼주세요.',rush:'정신없는 사이 좀비들이 몰려옵니다!',boss2:'여기 책임자 누구예요?',boss3:'인터넷에는 그렇게 안 나오던데요?',ko:'…그럼 다른 약국 갈게요.',customer:'저기요, 약 좀 물어보려고 하는데요.',end:'…오늘도 영업합니다.',police:'112 출동! 전원 함께 가시죠!',complaints:['저번에는 해줬는데요?','약이 왜 이렇게 비싸요?','인터넷에서는 그렇게 안 나오던데요?'],tutorial:['하늘에서 내려오는 돈을 눌러 50을 모은 뒤 판매대를 놓으세요.','판매대에서 나온 돈을 직접 터치해요!','돈을 100까지 모아 초보약사를 같은 줄에 배치해요.','잘했어요! 돈을 모으며 가운데 세 줄을 지켜요.','이제 다섯 줄! 각 레인에 약사를 준비하세요.']};
