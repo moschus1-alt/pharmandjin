@@ -28,6 +28,7 @@ export const ENEMIES=[
  {id:'phone',name:'스마트폰 좀비',hp:190,speed:.9,art:8,first:16,desc:'고개를 든 뒤 가속'},
  {id:'bulky',name:'덩치 좀비',hp:800,speed:.55,art:9,first:18,desc:'높은 HP · 강한 근접 공격'}
 ];
+ENEMIES.push({id:'armored',name:'포장갑옷 좀비',hp:240,shield:60,speed:.65,art:3,first:9,desc:'갑옷이 일반 공격을 차단 · 돌돌이 2회 명중으로 해제',counter:'돌돌이포장기 필수 → 갑옷 해제 후 모든 공격 가능'});
 export const U=Object.fromEntries(UNITS.map(x=>[x.id,x]));export const E=Object.fromEntries(ENEMIES.map(x=>[x.id,x]));
 export const WORLDS=[{name:'동네약국',sub:'01—07 · 익숙한 골목, 낯선 손님',color:'#e9ddbd'},{name:'병원 앞 약국',sub:'08—15 · 숨 돌릴 틈 없는 오후',color:'#dbe6d8'},{name:'심야약국',sub:'16—20 · 마지막 불이 켜진 곳',color:'#c9d7da'}];
 const recipes=[
@@ -56,6 +57,7 @@ export const EARLY_PACING={1:{duration:85,first:8,count:9},2:{duration:100,first
 export const TUTORIAL_PACING={sideFirst:6,sideSecond:13,openFive:19,finalDelay:4,finalCount:5,finalGap:5};
 export const STAGES=recipes.map((r,i)=>({id:i+1,title:r[0],weather:r[1],types:r[2],hint:r[3],world:i<7?0:i<15?1:2,duration:EARLY_PACING[i+1]?.duration??(i<9?300:i<15?370:480),initialMoney:0,event:i===9?'sales':i===18?'landlord':null,unlock:UNITS.filter(u=>u.unlock===i+2).map(u=>u.id)}));
 export const SKY_MONEY={first:1,openingGap:2,openingUntil:2,minGap:10,maxGap:14,value:25,fallSpeed:38};
+for(let id of [9,10,12,18]){STAGES[id-1].types=[...STAGES[id-1].types,'armored'];STAGES[id-1].requiredUnit='roller';}
 export const BALANCE={move:12.5,enemyDamage:25,enemyAttack:1,bulkyDamage:70,bulkyAttack:1.5,projectileSpeed:410,slowDuration:3,slowFactor:.6,bossHP:5000,bossDamage:60,bossAttack:1.8,bossPoliceDamage:.2,coinLife:15};
 export const BOARD={x:176,y:225,col:100,row:76,cols:8,lanes:5,end:137,spawn:1130};
 export const EARLY_CHAT={lines:['우박세트 주세요','후시딘 마데카솔 뭐가 좋아요?','이것좀 버려주세요','시럽병 10개만 주세요! 이거 공짜죠?'],duration:3.5,gap:6};
@@ -67,6 +69,7 @@ export function makeWaves(stage,seed){const rand=rng(seed),list=[];if(stage.id==
  if(stage.id===5)for(let i=list.length-8;i<list.length;i++){list[i].at=stage.duration-38+(i-list.length+8)*2.4;list[i].type='office';list[i].lane=i%5;}
  if(stage.id===12)for(let i=list.length-20;i<list.length;i++){list[i].at=stage.duration-48+(i-list.length+20)*1.1;list[i].type=stage.types[i%stage.types.length];list[i].lane=i%5;}
  if([7,12,18,19].includes(stage.id))for(let l=0;l<5;l++)list.push({at:stage.duration-28+l*.2,type:stage.types[l%stage.types.length],lane:l,group:groups});
+ if(stage.requiredUnit){let armor=list.filter(w=>w.type==='armored');if(!armor.length)list[Math.floor(list.length*.55)].type='armored';for(let i=0;i<Math.min(4,list.length);i++)if(list[i].type==='armored')list[i].type=stage.types[0];}
  // Cover every lane by redistributing existing late arrivals, without adding enemies.
  let counts=Array.from({length:5},(_,lane)=>list.filter(w=>w.lane===lane).length);
  for(let lane=0;lane<5;lane++)if(!counts[lane]){let candidates=list.filter((w,i)=>i>=Math.min(3,list.length-5)&&counts[w.lane]>1).sort((a,b)=>counts[b.lane]-counts[a.lane]||b.at-a.at);let w=candidates[0];if(w){counts[w.lane]--;w.lane=lane;counts[lane]++;}}

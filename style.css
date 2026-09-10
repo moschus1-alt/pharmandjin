@@ -43,3 +43,7 @@
 
 /* Cap full-deck card width instead of stretching across the screen. */
 .hud .battle-cards{flex:0 1 540px;min-width:0}.hud:has(.battle-card:nth-child(7)) .battle-cards{grid-template-columns:repeat(5,minmax(0,104px));grid-template-rows:repeat(2,46px);align-content:start}.hud .battle-card{max-height:54px}.hud:has(.battle-card:nth-child(7)){height:96px}.hud .money-box{width:66px;min-width:54px;max-height:96px}.hud .hud-tools{width:108px;min-width:90px}.hud:has(.battle-card:nth-child(7))~.battle-info{top:max(17%,112px)}
+
+.visitors{min-height:0;overflow:auto;flex:1}.visitors .enemy-preview{display:flex;flex-direction:column;flex-wrap:nowrap}.visitors .enemy-detail{display:flex;text-align:left;gap:6px;padding:5px;flex-shrink:0}.visitors .enemy-detail span{display:block}.visitors .enemy-detail b{font-size:11px}.visitors .enemy-detail small,.visitors .enemy-detail strong{display:block;font-size:10px;line-height:1.4}.required-enemy{padding:5px;background:#ffe2ae;color:#75451c;font-size:11px;font-weight:900}.visitors .enemy-detail strong{color:#985528}
+
+@media(max-height:450px){.loadout-slots{display:flex;overflow-x:auto;flex-shrink:0;padding-bottom:3px}.loadout-slots button,.loadout-slots .empty-slot{flex:0 0 48px;height:44px}.loadout-aside>.visitors{min-height:100px}.loadout-aside>small{font-size:8px}}
