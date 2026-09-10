@@ -40,3 +40,6 @@
 
 /* Tutorial lives in the footer, outside the placement board. */
 .tutorial{top:auto;bottom:1%;left:2%;right:auto;width:56%;max-height:8%;padding:4px 7px;margin:0;box-shadow:none;border-width:1px;font-size:clamp(9px,1vw,12px);line-height:1.3;text-align:left;overflow:hidden;pointer-events:none}.tutorial[hidden]{display:none}
+
+/* Cap full-deck card width instead of stretching across the screen. */
+.hud .battle-cards{flex:0 1 540px;min-width:0}.hud:has(.battle-card:nth-child(7)) .battle-cards{grid-template-columns:repeat(5,minmax(0,104px));grid-template-rows:repeat(2,46px);align-content:start}.hud .battle-card{max-height:54px}.hud:has(.battle-card:nth-child(7)){height:96px}.hud .money-box{width:66px;min-width:54px;max-height:96px}.hud .hud-tools{width:108px;min-width:90px}.hud:has(.battle-card:nth-child(7))~.battle-info{top:max(17%,112px)}
