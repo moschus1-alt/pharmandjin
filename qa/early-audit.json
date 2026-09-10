@@ -1,0 +1,42 @@
+[
+  {
+    "stage": 1,
+    "result": "win",
+    "firstCounter": 4.2,
+    "firstAttack": 27,
+    "clear": 107.8,
+    "police": 0
+  },
+  {
+    "stage": 2,
+    "result": "win",
+    "firstCounter": 4.2,
+    "firstAttack": 47.4,
+    "clear": 123.9,
+    "police": 1
+  },
+  {
+    "stage": 3,
+    "result": "win",
+    "firstCounter": 4.2,
+    "firstAttack": 57.6,
+    "clear": 138.1,
+    "police": 1
+  },
+  {
+    "stage": 4,
+    "result": "win",
+    "firstCounter": 4.2,
+    "firstAttack": 46.2,
+    "clear": 122.4,
+    "police": 1
+  },
+  {
+    "stage": 5,
+    "result": "win",
+    "firstCounter": 4.2,
+    "firstAttack": 46.2,
+    "clear": 162.7,
+    "police": 1
+  }
+]
