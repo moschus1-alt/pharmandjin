@@ -15,7 +15,7 @@ export function runRules(){let results=[];let check=(name,f)=>{try{f();results.p
  check('알바 준비 전 제거는 피해 없음',()=>{let s=newSim(['temp']);s.place('temp',2,2);let z=s.spawn('normal',2,450);tick(s,1);s.remove(2,2);tick(s,2);assert(z.hp===200);});
  check('알바 준비 이후 1회 범위 공격',()=>{let s=newSim(['temp']);s.place('temp',2,2);let z=s.spawn('bulky',2,485);let z2=s.spawn('bulky',1,485);tick(s,3.3);assert(z.hp===350&&z2.hp===350);assert(s.units.length===0&&s.stats.shots===1);assert(s.cooldowns.temp>30);});
  check('시럽 감속과 시간 해제',()=>{let s=newSim(['syrup']);s.place('syrup',1,2);let z=s.spawn('delivery',2,470);tick(s,1.4);assert(z.hp===140&&z.slow>0);s.remove(1,2);tick(s,3.1);assert(z.slow===0);});
- check('관통은 대상마다 1회 피해',()=>{let s=newSim(['roller']);s.place('roller',1,2);let a=s.spawn('bulky',2,435),b=s.spawn('bulky',2,495);tick(s,1.5);assert(a.hp===800-U.roller.damage&&b.hp===800-U.roller.damage);});
+ check('돌돌이 한 발 최대2마리·중복 피해 없음',()=>{let s=newSim(['roller']);s.place('roller',1,2);let a=s.spawn('bulky',2,435),b=s.spawn('bulky',2,495),c=s.spawn('bulky',2,555);tick(s,1.8);assert(s.stats.shots===1);assert(a.hp===800-U.roller.damage&&b.hp===800-U.roller.damage&&c.hp===800);});
  for(let lane of [0,2,4])check('자동조제 유효 레인 '+lane,()=>{let s=newSim(['dispenser']);s.place('dispenser',1,lane);let zs=[0,1,2,3,4].map(l=>s.spawn('normal',l,440));tick(s,1.3);for(let z of zs)assert(z.hp===(Math.abs(z.lane-lane)<=1?188:200));});
  check('연고칼 사거리 제한',()=>{let s=newSim(['spatula']);s.place('spatula',2,2);let near=s.spawn('bulky',2,470),far=s.spawn('bulky',2,750);tick(s,.7);assert(near.hp===755&&far.hp===800);});
  check('장바구니 선파괴·초과 피해',()=>{let s=newSim(),z=s.spawn('basket',2,600);s.damage(z,200);assert(z.shield===0&&z.hp===150);});
