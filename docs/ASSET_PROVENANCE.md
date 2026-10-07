@@ -1,5 +1,25 @@
 # 에셋 출처와 명세
 
+## 2026-10-07 리디자인 v2 (현재 사용)
+
+Codex 내장 imagegen으로 새로 생성했다. 외부 에셋 다운로드나 외부 그래픽 프로그램은 사용하지 않았다. 아래 v1 파일은 기록 보존용이며 현재 렌더러는 `assets/redesign/manifest-v2.json`의 새 원본만 사용한다.
+
+| 파일 | 용도 | 실제 규격 |
+|---|---|---|
+| `assets/redesign/team-v2.png` | 14종 아군 + 미사용 보조 소품 2개 | RGBA 1254×1254, 4×4 |
+| `assets/redesign/visitors-v2.png` | 적·보스·경찰·이벤트 인물 16종 | RGBA 1254×1254, 4×4 |
+| `assets/redesign/armored-v2.png` | 포장갑옷 적 | RGBA 1254×1254 |
+| `assets/redesign/ending-v2.png` | 청소·휴식·놀람 포즈 6개 | RGBA 1536×1024, 3×2 |
+| `assets/redesign/world-0-v2.png` | 동네약국 | RGB 1672×941 |
+| `assets/redesign/world-1-v2.png` | 병원 앞 약국 | RGB 1672×941 |
+| `assets/redesign/world-2-v2.png` | 심야약국 | RGB 1672×941 |
+
+생성 프롬프트와 수정 경위: `docs/ART_V2_PROMPTS.md`. 알파/프레임 경계 결과: `qa/asset-v2-report.json`. 팀·방문객은 각각 16프레임이며 행 우선 순서다. 엔딩 첫 시안에도 실제 알파 채널이 있었으며, 게임 배경에 겹쳐 보이던 장식·주변 광채를 제거한 수정본을 사용한다. 음악과 효과음은 기존 Web Audio 합성 모듈을 유지한다.
+
+방문객 아틀라스의 0부터 세는 11번 프레임은 오른쪽을 향한 경찰이다. 현재 `src/render.js`의 연행 장면에서는 경찰 프레임을 수평 반전 없이 오른쪽으로 이동시킨다. 왼쪽을 향한 적 프레임에만 `flip:true`를 적용하여 오른쪽으로 연행되는 방향을 맞춘다.
+
+## v1 기록
+
 모든 래스터 이미지는 2026-09-07 이 작업의 내장 Codex image_gen 도구로 새로 생성했다. 외부 에셋이나 외부 음악 파일을 사용하지 않았다.
 
 | 파일 | 용도 | 생성 규격 |

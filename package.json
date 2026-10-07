@@ -1,1 +1,1 @@
-{"name":"pharmacy-and-jinsang","version":"0.1.0","private":true,"type":"module","scripts":{"start":"node server.mjs","test":"node tests.mjs"}}
+{"name":"pharmacy-and-jinsang","version":"0.2.0","private":true,"type":"module","scripts":{"start":"node server.mjs","test":"node tests.mjs && node --test renderer-tests.mjs lifecycle-tests.mjs"}}

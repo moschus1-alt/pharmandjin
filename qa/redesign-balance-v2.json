@@ -1,0 +1,2329 @@
+{
+  "date": "2026-10-07",
+  "rules": [
+    {
+      "name": "0자금 하늘돈 수집·낙하·일시정지",
+      "status": "pass"
+    },
+    {
+      "name": "모든 전투 레인 등장 보장 1900시드",
+      "status": "pass"
+    },
+    {
+      "name": "새 적 소개는 모든 시드에서 보장",
+      "status": "pass"
+    },
+    {
+      "name": "단계 목표·난이도·예상시간·묶음 수와 생성 간격",
+      "status": "pass"
+    },
+    {
+      "name": "포장갑옷은 돌돌이로 해제 후 일반 피해",
+      "status": "pass"
+    },
+    {
+      "name": "포장갑옷 소개 단계 수와 간격",
+      "status": "pass"
+    },
+    {
+      "name": "12단계 마지막 무리 앞 생성 공백12초",
+      "status": "pass"
+    },
+    {
+      "name": "돈 수동 수집·중복 획득 방지",
+      "status": "pass"
+    },
+    {
+      "name": "자금 부족·점유 칸은 차감하지 않음",
+      "status": "pass"
+    },
+    {
+      "name": "카드 쿨다운은 재배치와 분리",
+      "status": "pass"
+    },
+    {
+      "name": "닫힌 레인·튜토리얼 직접 행동",
+      "status": "pass"
+    },
+    {
+      "name": "퇴근 도장 생성·공격 예약 제거",
+      "status": "pass"
+    },
+    {
+      "name": "초보약사 발사와 실제 피해",
+      "status": "pass"
+    },
+    {
+      "name": "실제 2단계 웨이브·정상 자금 긴급 배치는 겹친 첫 적 명중",
+      "status": "pass"
+    },
+    {
+      "name": "모든 직선 투사체 근접 겹침·첫 적 우선·관통 중복 방지",
+      "status": "pass"
+    },
+    {
+      "name": "발사 겹침 보정은 뒤쪽·다른 레인·먼 적 즉시 명중 금지",
+      "status": "pass"
+    },
+    {
+      "name": "베테랑 2연사 실제 두 발",
+      "status": "pass"
+    },
+    {
+      "name": "직원은 무공격 탱커",
+      "status": "pass"
+    },
+    {
+      "name": "알바 준비 전 제거는 피해 없음",
+      "status": "pass"
+    },
+    {
+      "name": "알바 준비 이후 1회 범위 공격",
+      "status": "pass"
+    },
+    {
+      "name": "시럽 감속과 시간 해제",
+      "status": "pass"
+    },
+    {
+      "name": "돌돌이 한 발 최대2마리·중복 피해 없음",
+      "status": "pass"
+    },
+    {
+      "name": "자동조제 유효 레인 0",
+      "status": "pass"
+    },
+    {
+      "name": "자동조제 유효 레인 2",
+      "status": "pass"
+    },
+    {
+      "name": "자동조제 유효 레인 4",
+      "status": "pass"
+    },
+    {
+      "name": "연고칼 사거리 제한",
+      "status": "pass"
+    },
+    {
+      "name": "직원 바로 뒤 연고칼은 붙잡힌 적 공격·먼 적 제외",
+      "status": "pass"
+    },
+    {
+      "name": "연고칼 165 사거리 경계에서 감지와 피해 일치",
+      "status": "pass"
+    },
+    {
+      "name": "장바구니 선파괴·초과 피해",
+      "status": "pass"
+    },
+    {
+      "name": "감기구름 아군 공격속도 상태",
+      "status": "pass"
+    },
+    {
+      "name": "진상 방해·대사·재적용 저항",
+      "status": "pass"
+    },
+    {
+      "name": "스마트폰 가속 예고",
+      "status": "pass"
+    },
+    {
+      "name": "일시정지 전체 상태 불변",
+      "status": "pass"
+    },
+    {
+      "name": "112 전장 전체 단 한 번 연행·다른 레인 재돌파 패배",
+      "status": "pass"
+    },
+    {
+      "name": "연행은 미래 웨이브를 삭제하지 않음",
+      "status": "pass"
+    },
+    {
+      "name": "왕진상 경찰 제압·HP와 페이즈 유지·재돌파 패배",
+      "status": "pass"
+    },
+    {
+      "name": "보스 65%·30% 페이즈 정확히 한 번",
+      "status": "pass"
+    },
+    {
+      "name": "보스 큰 피해에서도 필수 페이즈 보존",
+      "status": "pass"
+    },
+    {
+      "name": "Stage 10 쿨다운 혼선·돈 보존",
+      "status": "pass"
+    },
+    {
+      "name": "Stage 19 강탈 없음·후속 웨이브",
+      "status": "pass"
+    },
+    {
+      "name": "20스테이지 데이터·ID·레인·해금 순서",
+      "status": "pass"
+    },
+    {
+      "name": "재시작 돈·경찰·타이머 독립",
+      "status": "pass"
+    },
+    {
+      "name": "튜토리얼 적 전멸 후 불필요한 종료 대기 없음",
+      "status": "pass"
+    },
+    {
+      "name": "소진 레인 위험 예고와 패배 레인 보존",
+      "status": "pass"
+    },
+    {
+      "name": "9슬롯 초과 차단",
+      "status": "pass"
+    },
+    {
+      "name": "유발유봉은 같은 레인 고HP 적을 곡사 타격",
+      "status": "pass"
+    },
+    {
+      "name": "분무기 부채꼴과 사거리 제한",
+      "status": "pass"
+    },
+    {
+      "name": "냉찜질팩 준비시간·1회 빙결·시간 해제",
+      "status": "pass"
+    },
+    {
+      "name": "캡슐연사기 실제 빠른 연사",
+      "status": "pass"
+    },
+    {
+      "name": "약봉투 착탄 범위는 이웃 레인 포함",
+      "status": "pass"
+    }
+  ],
+  "baseline": [
+    {
+      "stage": 1,
+      "seed": 1979,
+      "deck": [
+        "counter",
+        "rookie"
+      ],
+      "result": "win",
+      "time": 103.0166666666621,
+      "police": 0,
+      "bossStage": 0
+    },
+    {
+      "stage": 2,
+      "seed": 3958,
+      "deck": [
+        "counter",
+        "rookie",
+        "staff"
+      ],
+      "result": "win",
+      "time": 106.74999999999523,
+      "police": 0,
+      "bossStage": 0
+    },
+    {
+      "stage": 3,
+      "seed": 5937,
+      "deck": [
+        "counter",
+        "rookie",
+        "staff",
+        "temp"
+      ],
+      "result": "win",
+      "time": 105.94999999999527,
+      "police": 0,
+      "bossStage": 0
+    },
+    {
+      "stage": 4,
+      "seed": 7916,
+      "deck": [
+        "counter",
+        "rookie",
+        "staff",
+        "syrup"
+      ],
+      "result": "win",
+      "time": 136.78333333333433,
+      "police": 1,
+      "bossStage": 0
+    },
+    {
+      "stage": 5,
+      "seed": 9895,
+      "deck": [
+        "counter",
+        "rookie",
+        "staff",
+        "syrup"
+      ],
+      "result": "win",
+      "time": 131.5833333333302,
+      "police": 1,
+      "bossStage": 0
+    },
+    {
+      "stage": 6,
+      "seed": 11874,
+      "deck": [
+        "counter",
+        "rookie",
+        "staff",
+        "syrup"
+      ],
+      "result": "win",
+      "time": 156.33333333334988,
+      "police": 0,
+      "bossStage": 0
+    },
+    {
+      "stage": 7,
+      "seed": 13853,
+      "deck": [
+        "counter",
+        "rookie",
+        "staff",
+        "syrup",
+        "veteran"
+      ],
+      "result": "win",
+      "time": 147.58333333334292,
+      "police": 1,
+      "bossStage": 0
+    },
+    {
+      "stage": 8,
+      "seed": 15832,
+      "deck": [
+        "counter",
+        "rookie",
+        "staff",
+        "syrup",
+        "veteran"
+      ],
+      "result": "win",
+      "time": 179.5666666667017,
+      "police": 0,
+      "bossStage": 0
+    },
+    {
+      "stage": 9,
+      "seed": 17811,
+      "deck": [
+        "counter",
+        "rookie",
+        "staff",
+        "syrup",
+        "veteran",
+        "roller"
+      ],
+      "result": "win",
+      "time": 145.88333333334157,
+      "police": 1,
+      "bossStage": 0
+    },
+    {
+      "stage": 10,
+      "seed": 19790,
+      "deck": [
+        "counter",
+        "rookie",
+        "staff",
+        "syrup",
+        "veteran",
+        "roller"
+      ],
+      "result": "win",
+      "time": 188.35000000004203,
+      "police": 1,
+      "bossStage": 0
+    },
+    {
+      "stage": 11,
+      "seed": 21769,
+      "deck": [
+        "counter",
+        "rookie",
+        "staff",
+        "syrup",
+        "veteran",
+        "roller"
+      ],
+      "result": "win",
+      "time": 181.46666666670322,
+      "police": 1,
+      "bossStage": 0
+    },
+    {
+      "stage": 12,
+      "seed": 23748,
+      "deck": [
+        "counter",
+        "rookie",
+        "staff",
+        "syrup",
+        "veteran",
+        "roller"
+      ],
+      "result": "win",
+      "time": 168.33333333335943,
+      "police": 1,
+      "bossStage": 0
+    },
+    {
+      "stage": 13,
+      "seed": 25727,
+      "deck": [
+        "counter",
+        "rookie",
+        "staff",
+        "syrup",
+        "veteran",
+        "dispenser"
+      ],
+      "result": "win",
+      "time": 197.63333333338275,
+      "police": 0,
+      "bossStage": 0
+    },
+    {
+      "stage": 14,
+      "seed": 27706,
+      "deck": [
+        "counter",
+        "rookie",
+        "staff",
+        "syrup",
+        "veteran",
+        "roller"
+      ],
+      "result": "win",
+      "time": 195.70000000004788,
+      "police": 0,
+      "bossStage": 0
+    },
+    {
+      "stage": 15,
+      "seed": 29685,
+      "deck": [
+        "counter",
+        "rookie",
+        "staff",
+        "syrup",
+        "veteran",
+        "roller"
+      ],
+      "result": "win",
+      "time": 222.6000000000693,
+      "police": 1,
+      "bossStage": 0
+    },
+    {
+      "stage": 16,
+      "seed": 31664,
+      "deck": [
+        "counter",
+        "rookie",
+        "staff",
+        "syrup",
+        "veteran",
+        "roller"
+      ],
+      "result": "win",
+      "time": 203.51666666672077,
+      "police": 1,
+      "bossStage": 0
+    },
+    {
+      "stage": 17,
+      "seed": 33643,
+      "deck": [
+        "counter",
+        "rookie",
+        "staff",
+        "syrup",
+        "veteran",
+        "spatula"
+      ],
+      "result": "win",
+      "time": 232.300000000077,
+      "police": 1,
+      "bossStage": 0
+    },
+    {
+      "stage": 18,
+      "seed": 35622,
+      "deck": [
+        "counter",
+        "rookie",
+        "staff",
+        "syrup",
+        "veteran",
+        "roller"
+      ],
+      "result": "win",
+      "time": 250.1666666667579,
+      "police": 1,
+      "bossStage": 0
+    },
+    {
+      "stage": 19,
+      "seed": 37601,
+      "deck": [
+        "counter",
+        "rookie",
+        "staff",
+        "syrup",
+        "veteran",
+        "roller"
+      ],
+      "result": "win",
+      "time": 295.8500000000596,
+      "police": 1,
+      "bossStage": 0
+    },
+    {
+      "stage": 20,
+      "seed": 39580,
+      "deck": [
+        "counter",
+        "rookie",
+        "staff",
+        "syrup",
+        "veteran",
+        "roller"
+      ],
+      "result": "win",
+      "time": 291.08333333339726,
+      "police": 1,
+      "bossStage": 3
+    },
+    {
+      "stage": 1,
+      "seed": 1996,
+      "deck": [
+        "counter",
+        "rookie"
+      ],
+      "result": "win",
+      "time": 104.53333333332868,
+      "police": 0,
+      "bossStage": 0
+    },
+    {
+      "stage": 2,
+      "seed": 3975,
+      "deck": [
+        "counter",
+        "rookie",
+        "staff"
+      ],
+      "result": "win",
+      "time": 107.44999999999519,
+      "police": 0,
+      "bossStage": 0
+    },
+    {
+      "stage": 3,
+      "seed": 5954,
+      "deck": [
+        "counter",
+        "rookie",
+        "staff",
+        "temp"
+      ],
+      "result": "win",
+      "time": 116.88333333332798,
+      "police": 0,
+      "bossStage": 0
+    },
+    {
+      "stage": 4,
+      "seed": 7933,
+      "deck": [
+        "counter",
+        "rookie",
+        "staff",
+        "syrup"
+      ],
+      "result": "win",
+      "time": 136.78333333333433,
+      "police": 1,
+      "bossStage": 0
+    },
+    {
+      "stage": 5,
+      "seed": 9912,
+      "deck": [
+        "counter",
+        "rookie",
+        "staff",
+        "syrup"
+      ],
+      "result": "win",
+      "time": 127.1833333333274,
+      "police": 1,
+      "bossStage": 0
+    },
+    {
+      "stage": 6,
+      "seed": 11891,
+      "deck": [
+        "counter",
+        "rookie",
+        "staff",
+        "syrup"
+      ],
+      "result": "win",
+      "time": 160.28333333335303,
+      "police": 0,
+      "bossStage": 0
+    },
+    {
+      "stage": 7,
+      "seed": 13870,
+      "deck": [
+        "counter",
+        "rookie",
+        "staff",
+        "syrup",
+        "veteran"
+      ],
+      "result": "win",
+      "time": 164.8833333333567,
+      "police": 0,
+      "bossStage": 0
+    },
+    {
+      "stage": 8,
+      "seed": 15849,
+      "deck": [
+        "counter",
+        "rookie",
+        "staff",
+        "syrup",
+        "veteran"
+      ],
+      "result": "win",
+      "time": 178.38333333336743,
+      "police": 1,
+      "bossStage": 0
+    },
+    {
+      "stage": 9,
+      "seed": 17828,
+      "deck": [
+        "counter",
+        "rookie",
+        "staff",
+        "syrup",
+        "veteran",
+        "roller"
+      ],
+      "result": "win",
+      "time": 142.06666666667186,
+      "police": 1,
+      "bossStage": 0
+    },
+    {
+      "stage": 10,
+      "seed": 19807,
+      "deck": [
+        "counter",
+        "rookie",
+        "staff",
+        "syrup",
+        "veteran",
+        "roller"
+      ],
+      "result": "win",
+      "time": 175.98333333336552,
+      "police": 1,
+      "bossStage": 0
+    },
+    {
+      "stage": 11,
+      "seed": 21786,
+      "deck": [
+        "counter",
+        "rookie",
+        "staff",
+        "syrup",
+        "veteran",
+        "roller"
+      ],
+      "result": "win",
+      "time": 183.16666666670457,
+      "police": 1,
+      "bossStage": 0
+    },
+    {
+      "stage": 12,
+      "seed": 23765,
+      "deck": [
+        "counter",
+        "rookie",
+        "staff",
+        "syrup",
+        "veteran",
+        "roller"
+      ],
+      "result": "win",
+      "time": 151.5833333333461,
+      "police": 1,
+      "bossStage": 0
+    },
+    {
+      "stage": 13,
+      "seed": 25744,
+      "deck": [
+        "counter",
+        "rookie",
+        "staff",
+        "syrup",
+        "veteran",
+        "dispenser"
+      ],
+      "result": "win",
+      "time": 207.66666666672407,
+      "police": 0,
+      "bossStage": 0
+    },
+    {
+      "stage": 14,
+      "seed": 27723,
+      "deck": [
+        "counter",
+        "rookie",
+        "staff",
+        "syrup",
+        "veteran",
+        "roller"
+      ],
+      "result": "win",
+      "time": 177.73333333336691,
+      "police": 1,
+      "bossStage": 0
+    },
+    {
+      "stage": 15,
+      "seed": 29702,
+      "deck": [
+        "counter",
+        "rookie",
+        "staff",
+        "syrup",
+        "veteran",
+        "roller"
+      ],
+      "result": "win",
+      "time": 217.9333333333989,
+      "police": 1,
+      "bossStage": 0
+    },
+    {
+      "stage": 16,
+      "seed": 31681,
+      "deck": [
+        "counter",
+        "rookie",
+        "staff",
+        "syrup",
+        "veteran",
+        "roller"
+      ],
+      "result": "win",
+      "time": 198.73333333338363,
+      "police": 1,
+      "bossStage": 0
+    },
+    {
+      "stage": 17,
+      "seed": 33660,
+      "deck": [
+        "counter",
+        "rookie",
+        "staff",
+        "syrup",
+        "veteran",
+        "spatula"
+      ],
+      "result": "win",
+      "time": 226.35000000007227,
+      "police": 1,
+      "bossStage": 0
+    },
+    {
+      "stage": 18,
+      "seed": 35639,
+      "deck": [
+        "counter",
+        "rookie",
+        "staff",
+        "syrup",
+        "veteran",
+        "roller"
+      ],
+      "result": "win",
+      "time": 254.28333333342783,
+      "police": 1,
+      "bossStage": 0
+    },
+    {
+      "stage": 19,
+      "seed": 37618,
+      "deck": [
+        "counter",
+        "rookie",
+        "staff",
+        "syrup",
+        "veteran",
+        "roller"
+      ],
+      "result": "lose",
+      "time": 310.71666666671274,
+      "police": 1,
+      "bossStage": 0
+    },
+    {
+      "stage": 20,
+      "seed": 39597,
+      "deck": [
+        "counter",
+        "rookie",
+        "staff",
+        "syrup",
+        "veteran",
+        "roller"
+      ],
+      "result": "win",
+      "time": 291.0666666667306,
+      "police": 1,
+      "bossStage": 3
+    },
+    {
+      "stage": 1,
+      "seed": 2070,
+      "deck": [
+        "counter",
+        "rookie"
+      ],
+      "result": "win",
+      "time": 105.38333333332864,
+      "police": 0,
+      "bossStage": 0
+    },
+    {
+      "stage": 2,
+      "seed": 4049,
+      "deck": [
+        "counter",
+        "rookie",
+        "staff"
+      ],
+      "result": "win",
+      "time": 106.31666666666192,
+      "police": 0,
+      "bossStage": 0
+    },
+    {
+      "stage": 3,
+      "seed": 6028,
+      "deck": [
+        "counter",
+        "rookie",
+        "staff",
+        "temp"
+      ],
+      "result": "win",
+      "time": 111.3333333333283,
+      "police": 0,
+      "bossStage": 0
+    },
+    {
+      "stage": 4,
+      "seed": 8007,
+      "deck": [
+        "counter",
+        "rookie",
+        "staff",
+        "syrup"
+      ],
+      "result": "win",
+      "time": 128.09999999999408,
+      "police": 0,
+      "bossStage": 0
+    },
+    {
+      "stage": 5,
+      "seed": 9986,
+      "deck": [
+        "counter",
+        "rookie",
+        "staff",
+        "syrup"
+      ],
+      "result": "win",
+      "time": 105.46666666666196,
+      "police": 1,
+      "bossStage": 0
+    },
+    {
+      "stage": 6,
+      "seed": 11965,
+      "deck": [
+        "counter",
+        "rookie",
+        "staff",
+        "syrup"
+      ],
+      "result": "win",
+      "time": 136.51666666666745,
+      "police": 0,
+      "bossStage": 0
+    },
+    {
+      "stage": 7,
+      "seed": 13944,
+      "deck": [
+        "counter",
+        "rookie",
+        "staff",
+        "syrup",
+        "veteran"
+      ],
+      "result": "win",
+      "time": 154.95000000001545,
+      "police": 0,
+      "bossStage": 0
+    },
+    {
+      "stage": 8,
+      "seed": 15923,
+      "deck": [
+        "counter",
+        "rookie",
+        "staff",
+        "syrup",
+        "veteran"
+      ],
+      "result": "win",
+      "time": 182.60000000003745,
+      "police": 1,
+      "bossStage": 0
+    },
+    {
+      "stage": 9,
+      "seed": 17902,
+      "deck": [
+        "counter",
+        "rookie",
+        "staff",
+        "syrup",
+        "veteran",
+        "roller"
+      ],
+      "result": "win",
+      "time": 257.58333333342773,
+      "police": 1,
+      "bossStage": 0
+    },
+    {
+      "stage": 10,
+      "seed": 19881,
+      "deck": [
+        "counter",
+        "rookie",
+        "staff",
+        "syrup",
+        "veteran",
+        "roller"
+      ],
+      "result": "win",
+      "time": 168.81666666669315,
+      "police": 1,
+      "bossStage": 0
+    },
+    {
+      "stage": 11,
+      "seed": 21860,
+      "deck": [
+        "counter",
+        "rookie",
+        "staff",
+        "syrup",
+        "veteran",
+        "roller"
+      ],
+      "result": "win",
+      "time": 171.9333333333623,
+      "police": 1,
+      "bossStage": 0
+    },
+    {
+      "stage": 12,
+      "seed": 23839,
+      "deck": [
+        "counter",
+        "rookie",
+        "staff",
+        "syrup",
+        "veteran",
+        "roller"
+      ],
+      "result": "win",
+      "time": 190.08333333337674,
+      "police": 1,
+      "bossStage": 0
+    },
+    {
+      "stage": 13,
+      "seed": 25818,
+      "deck": [
+        "counter",
+        "rookie",
+        "staff",
+        "syrup",
+        "veteran",
+        "dispenser"
+      ],
+      "result": "win",
+      "time": 210.3833333333929,
+      "police": 0,
+      "bossStage": 0
+    },
+    {
+      "stage": 14,
+      "seed": 27797,
+      "deck": [
+        "counter",
+        "rookie",
+        "staff",
+        "syrup",
+        "veteran",
+        "roller"
+      ],
+      "result": "win",
+      "time": 199.6666666667177,
+      "police": 1,
+      "bossStage": 0
+    },
+    {
+      "stage": 15,
+      "seed": 29776,
+      "deck": [
+        "counter",
+        "rookie",
+        "staff",
+        "syrup",
+        "veteran",
+        "roller"
+      ],
+      "result": "win",
+      "time": 232.10000000007685,
+      "police": 1,
+      "bossStage": 0
+    },
+    {
+      "stage": 16,
+      "seed": 31755,
+      "deck": [
+        "counter",
+        "rookie",
+        "staff",
+        "syrup",
+        "veteran",
+        "roller"
+      ],
+      "result": "win",
+      "time": 198.73333333338363,
+      "police": 1,
+      "bossStage": 0
+    },
+    {
+      "stage": 17,
+      "seed": 33734,
+      "deck": [
+        "counter",
+        "rookie",
+        "staff",
+        "syrup",
+        "veteran",
+        "spatula"
+      ],
+      "result": "win",
+      "time": 219.25000000006662,
+      "police": 1,
+      "bossStage": 0
+    },
+    {
+      "stage": 18,
+      "seed": 35713,
+      "deck": [
+        "counter",
+        "rookie",
+        "staff",
+        "syrup",
+        "veteran",
+        "roller"
+      ],
+      "result": "win",
+      "time": 248.26666666675638,
+      "police": 1,
+      "bossStage": 0
+    },
+    {
+      "stage": 19,
+      "seed": 37692,
+      "deck": [
+        "counter",
+        "rookie",
+        "staff",
+        "syrup",
+        "veteran",
+        "roller"
+      ],
+      "result": "win",
+      "time": 276.6666666667437,
+      "police": 1,
+      "bossStage": 0
+    },
+    {
+      "stage": 20,
+      "seed": 39671,
+      "deck": [
+        "counter",
+        "rookie",
+        "staff",
+        "syrup",
+        "veteran",
+        "roller"
+      ],
+      "result": "win",
+      "time": 338.7000000000206,
+      "police": 1,
+      "bossStage": 3
+    }
+  ],
+  "cadenced": [
+    {
+      "stage": 1,
+      "seed": 1979,
+      "deck": [
+        "counter",
+        "rookie"
+      ],
+      "cadence": 0.5,
+      "result": "win",
+      "time": 106.64999999999523,
+      "police": 0,
+      "actions": 50,
+      "bossStage": 0
+    },
+    {
+      "stage": 2,
+      "seed": 3958,
+      "deck": [
+        "counter",
+        "rookie",
+        "staff"
+      ],
+      "cadence": 0.5,
+      "result": "win",
+      "time": 106.26666666666192,
+      "police": 0,
+      "actions": 59,
+      "bossStage": 0
+    },
+    {
+      "stage": 3,
+      "seed": 5937,
+      "deck": [
+        "counter",
+        "rookie",
+        "staff",
+        "temp"
+      ],
+      "cadence": 0.5,
+      "result": "win",
+      "time": 130.083333333329,
+      "police": 0,
+      "actions": 75,
+      "bossStage": 0
+    },
+    {
+      "stage": 4,
+      "seed": 7916,
+      "deck": [
+        "counter",
+        "rookie",
+        "staff",
+        "syrup"
+      ],
+      "cadence": 0.5,
+      "result": "win",
+      "time": 131.6666666666636,
+      "police": 0,
+      "actions": 77,
+      "bossStage": 0
+    },
+    {
+      "stage": 5,
+      "seed": 9895,
+      "deck": [
+        "counter",
+        "rookie",
+        "staff",
+        "syrup"
+      ],
+      "cadence": 0.5,
+      "result": "win",
+      "time": 135.2166666666664,
+      "police": 0,
+      "actions": 75,
+      "bossStage": 0
+    },
+    {
+      "stage": 6,
+      "seed": 11874,
+      "deck": [
+        "counter",
+        "rookie",
+        "staff",
+        "syrup"
+      ],
+      "cadence": 0.5,
+      "result": "win",
+      "time": 124.66666666666087,
+      "police": 0,
+      "actions": 70,
+      "bossStage": 0
+    },
+    {
+      "stage": 7,
+      "seed": 13853,
+      "deck": [
+        "counter",
+        "rookie",
+        "staff",
+        "syrup",
+        "veteran"
+      ],
+      "cadence": 0.5,
+      "result": "win",
+      "time": 149.1000000000108,
+      "police": 0,
+      "actions": 86,
+      "bossStage": 0
+    },
+    {
+      "stage": 8,
+      "seed": 15832,
+      "deck": [
+        "counter",
+        "rookie",
+        "staff",
+        "syrup",
+        "veteran"
+      ],
+      "cadence": 0.5,
+      "result": "win",
+      "time": 161.35000000002054,
+      "police": 0,
+      "actions": 92,
+      "bossStage": 0
+    },
+    {
+      "stage": 9,
+      "seed": 17811,
+      "deck": [
+        "counter",
+        "rookie",
+        "staff",
+        "syrup",
+        "veteran",
+        "roller"
+      ],
+      "cadence": 0.5,
+      "result": "win",
+      "time": 134.13333333333222,
+      "police": 1,
+      "actions": 78,
+      "bossStage": 0
+    },
+    {
+      "stage": 10,
+      "seed": 19790,
+      "deck": [
+        "counter",
+        "rookie",
+        "staff",
+        "syrup",
+        "veteran",
+        "roller"
+      ],
+      "cadence": 0.5,
+      "result": "win",
+      "time": 153.73333333334782,
+      "police": 1,
+      "actions": 93,
+      "bossStage": 0
+    },
+    {
+      "stage": 11,
+      "seed": 21769,
+      "deck": [
+        "counter",
+        "rookie",
+        "staff",
+        "syrup",
+        "veteran",
+        "roller"
+      ],
+      "cadence": 0.5,
+      "result": "win",
+      "time": 186.28333333337372,
+      "police": 0,
+      "actions": 106,
+      "bossStage": 0
+    },
+    {
+      "stage": 12,
+      "seed": 23748,
+      "deck": [
+        "counter",
+        "rookie",
+        "staff",
+        "syrup",
+        "veteran",
+        "roller"
+      ],
+      "cadence": 0.5,
+      "result": "win",
+      "time": 167.9500000000258,
+      "police": 1,
+      "actions": 104,
+      "bossStage": 0
+    },
+    {
+      "stage": 13,
+      "seed": 25727,
+      "deck": [
+        "counter",
+        "rookie",
+        "staff",
+        "syrup",
+        "veteran",
+        "dispenser"
+      ],
+      "cadence": 0.5,
+      "result": "win",
+      "time": 195.31666666671424,
+      "police": 0,
+      "actions": 116,
+      "bossStage": 0
+    },
+    {
+      "stage": 14,
+      "seed": 27706,
+      "deck": [
+        "counter",
+        "rookie",
+        "staff",
+        "syrup",
+        "veteran",
+        "roller"
+      ],
+      "cadence": 0.5,
+      "result": "win",
+      "time": 177.73333333336691,
+      "police": 0,
+      "actions": 104,
+      "bossStage": 0
+    },
+    {
+      "stage": 15,
+      "seed": 29685,
+      "deck": [
+        "counter",
+        "rookie",
+        "staff",
+        "syrup",
+        "veteran",
+        "roller"
+      ],
+      "cadence": 0.5,
+      "result": "win",
+      "time": 221.28333333340157,
+      "police": 1,
+      "actions": 128,
+      "bossStage": 0
+    },
+    {
+      "stage": 16,
+      "seed": 31664,
+      "deck": [
+        "counter",
+        "rookie",
+        "staff",
+        "syrup",
+        "veteran",
+        "roller"
+      ],
+      "cadence": 0.5,
+      "result": "win",
+      "time": 192.96666666671237,
+      "police": 0,
+      "actions": 111,
+      "bossStage": 0
+    },
+    {
+      "stage": 17,
+      "seed": 33643,
+      "deck": [
+        "counter",
+        "rookie",
+        "staff",
+        "syrup",
+        "veteran",
+        "spatula"
+      ],
+      "cadence": 0.5,
+      "result": "win",
+      "time": 224.46666666673744,
+      "police": 1,
+      "actions": 134,
+      "bossStage": 0
+    },
+    {
+      "stage": 18,
+      "seed": 35622,
+      "deck": [
+        "counter",
+        "rookie",
+        "staff",
+        "syrup",
+        "veteran",
+        "roller"
+      ],
+      "cadence": 0.5,
+      "result": "win",
+      "time": 297.1833333333917,
+      "police": 0,
+      "actions": 180,
+      "bossStage": 0
+    },
+    {
+      "stage": 19,
+      "seed": 37601,
+      "deck": [
+        "counter",
+        "rookie",
+        "staff",
+        "syrup",
+        "veteran",
+        "roller"
+      ],
+      "cadence": 0.5,
+      "result": "win",
+      "time": 263.93333333342196,
+      "police": 1,
+      "actions": 154,
+      "bossStage": 0
+    },
+    {
+      "stage": 20,
+      "seed": 39580,
+      "deck": [
+        "counter",
+        "rookie",
+        "staff",
+        "syrup",
+        "veteran",
+        "roller"
+      ],
+      "cadence": 0.5,
+      "result": "win",
+      "time": 300.13333333338903,
+      "police": 1,
+      "actions": 178,
+      "bossStage": 3
+    },
+    {
+      "stage": 1,
+      "seed": 1996,
+      "deck": [
+        "counter",
+        "rookie"
+      ],
+      "cadence": 0.5,
+      "result": "win",
+      "time": 110.23333333332836,
+      "police": 0,
+      "actions": 48,
+      "bossStage": 0
+    },
+    {
+      "stage": 2,
+      "seed": 3975,
+      "deck": [
+        "counter",
+        "rookie",
+        "staff"
+      ],
+      "cadence": 0.5,
+      "result": "win",
+      "time": 106.26666666666192,
+      "police": 0,
+      "actions": 61,
+      "bossStage": 0
+    },
+    {
+      "stage": 3,
+      "seed": 5954,
+      "deck": [
+        "counter",
+        "rookie",
+        "staff",
+        "temp"
+      ],
+      "cadence": 0.5,
+      "result": "win",
+      "time": 129.29999999999504,
+      "police": 0,
+      "actions": 73,
+      "bossStage": 0
+    },
+    {
+      "stage": 4,
+      "seed": 7933,
+      "deck": [
+        "counter",
+        "rookie",
+        "staff",
+        "syrup"
+      ],
+      "cadence": 0.5,
+      "result": "win",
+      "time": 108.48333333332846,
+      "police": 0,
+      "actions": 59,
+      "bossStage": 0
+    },
+    {
+      "stage": 5,
+      "seed": 9912,
+      "deck": [
+        "counter",
+        "rookie",
+        "staff",
+        "syrup"
+      ],
+      "cadence": 0.5,
+      "result": "win",
+      "time": 128.59999999999448,
+      "police": 0,
+      "actions": 75,
+      "bossStage": 0
+    },
+    {
+      "stage": 6,
+      "seed": 11891,
+      "deck": [
+        "counter",
+        "rookie",
+        "staff",
+        "syrup"
+      ],
+      "cadence": 0.5,
+      "result": "win",
+      "time": 142.4500000000055,
+      "police": 0,
+      "actions": 83,
+      "bossStage": 0
+    },
+    {
+      "stage": 7,
+      "seed": 13870,
+      "deck": [
+        "counter",
+        "rookie",
+        "staff",
+        "syrup",
+        "veteran"
+      ],
+      "cadence": 0.5,
+      "result": "win",
+      "time": 153.68333333334778,
+      "police": 0,
+      "actions": 92,
+      "bossStage": 0
+    },
+    {
+      "stage": 8,
+      "seed": 15849,
+      "deck": [
+        "counter",
+        "rookie",
+        "staff",
+        "syrup",
+        "veteran"
+      ],
+      "cadence": 0.5,
+      "result": "win",
+      "time": 171.91666666669562,
+      "police": 0,
+      "actions": 102,
+      "bossStage": 0
+    },
+    {
+      "stage": 9,
+      "seed": 17828,
+      "deck": [
+        "counter",
+        "rookie",
+        "staff",
+        "syrup",
+        "veteran",
+        "roller"
+      ],
+      "cadence": 0.5,
+      "result": "win",
+      "time": 155.1666666666823,
+      "police": 1,
+      "actions": 90,
+      "bossStage": 0
+    },
+    {
+      "stage": 10,
+      "seed": 19807,
+      "deck": [
+        "counter",
+        "rookie",
+        "staff",
+        "syrup",
+        "veteran",
+        "roller"
+      ],
+      "cadence": 0.5,
+      "result": "win",
+      "time": 160.5666666666866,
+      "police": 1,
+      "actions": 95,
+      "bossStage": 0
+    },
+    {
+      "stage": 11,
+      "seed": 21786,
+      "deck": [
+        "counter",
+        "rookie",
+        "staff",
+        "syrup",
+        "veteran",
+        "roller"
+      ],
+      "cadence": 0.5,
+      "result": "win",
+      "time": 182.25000000003718,
+      "police": 0,
+      "actions": 105,
+      "bossStage": 0
+    },
+    {
+      "stage": 12,
+      "seed": 23765,
+      "deck": [
+        "counter",
+        "rookie",
+        "staff",
+        "syrup",
+        "veteran",
+        "roller"
+      ],
+      "cadence": 0.5,
+      "result": "win",
+      "time": 164.18333333335613,
+      "police": 1,
+      "actions": 96,
+      "bossStage": 0
+    },
+    {
+      "stage": 13,
+      "seed": 25744,
+      "deck": [
+        "counter",
+        "rookie",
+        "staff",
+        "syrup",
+        "veteran",
+        "dispenser"
+      ],
+      "cadence": 0.5,
+      "result": "win",
+      "time": 189.76666666670982,
+      "police": 0,
+      "actions": 112,
+      "bossStage": 0
+    },
+    {
+      "stage": 14,
+      "seed": 27723,
+      "deck": [
+        "counter",
+        "rookie",
+        "staff",
+        "syrup",
+        "veteran",
+        "roller"
+      ],
+      "cadence": 0.5,
+      "result": "win",
+      "time": 172.30000000002926,
+      "police": 0,
+      "actions": 102,
+      "bossStage": 0
+    },
+    {
+      "stage": 15,
+      "seed": 29702,
+      "deck": [
+        "counter",
+        "rookie",
+        "staff",
+        "syrup",
+        "veteran",
+        "roller"
+      ],
+      "cadence": 0.5,
+      "result": "win",
+      "time": 215.81666666673055,
+      "police": 1,
+      "actions": 129,
+      "bossStage": 0
+    },
+    {
+      "stage": 16,
+      "seed": 31681,
+      "deck": [
+        "counter",
+        "rookie",
+        "staff",
+        "syrup",
+        "veteran",
+        "roller"
+      ],
+      "cadence": 0.5,
+      "result": "win",
+      "time": 194.21666666671337,
+      "police": 0,
+      "actions": 112,
+      "bossStage": 0
+    },
+    {
+      "stage": 17,
+      "seed": 33660,
+      "deck": [
+        "counter",
+        "rookie",
+        "staff",
+        "syrup",
+        "veteran",
+        "spatula"
+      ],
+      "cadence": 0.5,
+      "result": "win",
+      "time": 227.01666666673947,
+      "police": 0,
+      "actions": 135,
+      "bossStage": 0
+    },
+    {
+      "stage": 18,
+      "seed": 35639,
+      "deck": [
+        "counter",
+        "rookie",
+        "staff",
+        "syrup",
+        "veteran",
+        "roller"
+      ],
+      "cadence": 0.5,
+      "result": "win",
+      "time": 246.70000000008847,
+      "police": 1,
+      "actions": 146,
+      "bossStage": 0
+    },
+    {
+      "stage": 19,
+      "seed": 37618,
+      "deck": [
+        "counter",
+        "rookie",
+        "staff",
+        "syrup",
+        "veteran",
+        "roller"
+      ],
+      "cadence": 0.5,
+      "result": "lose",
+      "time": 323.0666666667015,
+      "police": 1,
+      "actions": 189,
+      "bossStage": 0
+    },
+    {
+      "stage": 20,
+      "seed": 39597,
+      "deck": [
+        "counter",
+        "rookie",
+        "staff",
+        "syrup",
+        "veteran",
+        "roller"
+      ],
+      "cadence": 0.5,
+      "result": "win",
+      "time": 311.8666666667117,
+      "police": 1,
+      "actions": 183,
+      "bossStage": 3
+    },
+    {
+      "stage": 1,
+      "seed": 2070,
+      "deck": [
+        "counter",
+        "rookie"
+      ],
+      "cadence": 0.5,
+      "result": "win",
+      "time": 112.71666666666155,
+      "police": 0,
+      "actions": 49,
+      "bossStage": 0
+    },
+    {
+      "stage": 2,
+      "seed": 4049,
+      "deck": [
+        "counter",
+        "rookie",
+        "staff"
+      ],
+      "cadence": 0.5,
+      "result": "win",
+      "time": 108.98333333332843,
+      "police": 0,
+      "actions": 62,
+      "bossStage": 0
+    },
+    {
+      "stage": 3,
+      "seed": 6028,
+      "deck": [
+        "counter",
+        "rookie",
+        "staff",
+        "temp"
+      ],
+      "cadence": 0.5,
+      "result": "win",
+      "time": 121.04999999999441,
+      "police": 0,
+      "actions": 71,
+      "bossStage": 0
+    },
+    {
+      "stage": 4,
+      "seed": 8007,
+      "deck": [
+        "counter",
+        "rookie",
+        "staff",
+        "syrup"
+      ],
+      "cadence": 0.5,
+      "result": "win",
+      "time": 133.74999999999858,
+      "police": 0,
+      "actions": 76,
+      "bossStage": 0
+    },
+    {
+      "stage": 5,
+      "seed": 9986,
+      "deck": [
+        "counter",
+        "rookie",
+        "staff",
+        "syrup"
+      ],
+      "cadence": 0.5,
+      "result": "win",
+      "time": 139.81666666667007,
+      "police": 0,
+      "actions": 79,
+      "bossStage": 0
+    },
+    {
+      "stage": 6,
+      "seed": 11965,
+      "deck": [
+        "counter",
+        "rookie",
+        "staff",
+        "syrup"
+      ],
+      "cadence": 0.5,
+      "result": "win",
+      "time": 132.36666666666414,
+      "police": 0,
+      "actions": 76,
+      "bossStage": 0
+    },
+    {
+      "stage": 7,
+      "seed": 13944,
+      "deck": [
+        "counter",
+        "rookie",
+        "staff",
+        "syrup",
+        "veteran"
+      ],
+      "cadence": 0.5,
+      "result": "win",
+      "time": 120.58333333332777,
+      "police": 1,
+      "actions": 69,
+      "bossStage": 0
+    },
+    {
+      "stage": 8,
+      "seed": 15923,
+      "deck": [
+        "counter",
+        "rookie",
+        "staff",
+        "syrup",
+        "veteran"
+      ],
+      "cadence": 0.5,
+      "result": "win",
+      "time": 159.16666666668547,
+      "police": 0,
+      "actions": 92,
+      "bossStage": 0
+    },
+    {
+      "stage": 9,
+      "seed": 17902,
+      "deck": [
+        "counter",
+        "rookie",
+        "staff",
+        "syrup",
+        "veteran",
+        "roller"
+      ],
+      "cadence": 0.5,
+      "result": "win",
+      "time": 194.88333333338056,
+      "police": 0,
+      "actions": 112,
+      "bossStage": 0
+    },
+    {
+      "stage": 10,
+      "seed": 19881,
+      "deck": [
+        "counter",
+        "rookie",
+        "staff",
+        "syrup",
+        "veteran",
+        "roller"
+      ],
+      "cadence": 0.5,
+      "result": "win",
+      "time": 228.66666666674078,
+      "police": 1,
+      "actions": 140,
+      "bossStage": 0
+    },
+    {
+      "stage": 11,
+      "seed": 21860,
+      "deck": [
+        "counter",
+        "rookie",
+        "staff",
+        "syrup",
+        "veteran",
+        "roller"
+      ],
+      "cadence": 0.5,
+      "result": "win",
+      "time": 162.2166666666879,
+      "police": 1,
+      "actions": 99,
+      "bossStage": 0
+    },
+    {
+      "stage": 12,
+      "seed": 23839,
+      "deck": [
+        "counter",
+        "rookie",
+        "staff",
+        "syrup",
+        "veteran",
+        "roller"
+      ],
+      "cadence": 0.5,
+      "result": "win",
+      "time": 267.8666666667517,
+      "police": 1,
+      "actions": 161,
+      "bossStage": 0
+    },
+    {
+      "stage": 13,
+      "seed": 25818,
+      "deck": [
+        "counter",
+        "rookie",
+        "staff",
+        "syrup",
+        "veteran",
+        "dispenser"
+      ],
+      "cadence": 0.5,
+      "result": "win",
+      "time": 185.45000000003972,
+      "police": 0,
+      "actions": 106,
+      "bossStage": 0
+    },
+    {
+      "stage": 14,
+      "seed": 27797,
+      "deck": [
+        "counter",
+        "rookie",
+        "staff",
+        "syrup",
+        "veteran",
+        "roller"
+      ],
+      "cadence": 0.5,
+      "result": "win",
+      "time": 177.73333333336691,
+      "police": 1,
+      "actions": 103,
+      "bossStage": 0
+    },
+    {
+      "stage": 15,
+      "seed": 29776,
+      "deck": [
+        "counter",
+        "rookie",
+        "staff",
+        "syrup",
+        "veteran",
+        "roller"
+      ],
+      "cadence": 0.5,
+      "result": "win",
+      "time": 219.78333333340038,
+      "police": 1,
+      "actions": 130,
+      "bossStage": 0
+    },
+    {
+      "stage": 16,
+      "seed": 31755,
+      "deck": [
+        "counter",
+        "rookie",
+        "staff",
+        "syrup",
+        "veteran",
+        "roller"
+      ],
+      "cadence": 0.5,
+      "result": "win",
+      "time": 192.96666666671237,
+      "police": 0,
+      "actions": 112,
+      "bossStage": 0
+    },
+    {
+      "stage": 17,
+      "seed": 33734,
+      "deck": [
+        "counter",
+        "rookie",
+        "staff",
+        "syrup",
+        "veteran",
+        "spatula"
+      ],
+      "cadence": 0.5,
+      "result": "win",
+      "time": 225.166666666738,
+      "police": 0,
+      "actions": 135,
+      "bossStage": 0
+    },
+    {
+      "stage": 18,
+      "seed": 35713,
+      "deck": [
+        "counter",
+        "rookie",
+        "staff",
+        "syrup",
+        "veteran",
+        "roller"
+      ],
+      "cadence": 0.5,
+      "result": "win",
+      "time": 240.91666666675053,
+      "police": 1,
+      "actions": 142,
+      "bossStage": 0
+    },
+    {
+      "stage": 19,
+      "seed": 37692,
+      "deck": [
+        "counter",
+        "rookie",
+        "staff",
+        "syrup",
+        "veteran",
+        "roller"
+      ],
+      "cadence": 0.5,
+      "result": "win",
+      "time": 285.06666666673607,
+      "police": 1,
+      "actions": 170,
+      "bossStage": 0
+    },
+    {
+      "stage": 20,
+      "seed": 39671,
+      "deck": [
+        "counter",
+        "rookie",
+        "staff",
+        "syrup",
+        "veteran",
+        "roller"
+      ],
+      "cadence": 0.5,
+      "result": "win",
+      "time": 284.3000000000701,
+      "police": 1,
+      "actions": 166,
+      "bossStage": 3
+    }
+  ],
+  "stages": [
+    {
+      "stage": 1,
+      "goal": "돈을 모아 판매대와 초보약사 배치하기",
+      "difficulty": 1,
+      "estimatedSeconds": 105,
+      "groups": 3,
+      "enemies": 0,
+      "lastSpawn": null
+    },
+    {
+      "stage": 2,
+      "goal": "직원 앞줄과 약사 뒷줄로 첫 방어 만들기",
+      "difficulty": 1,
+      "estimatedSeconds": 105,
+      "groups": 3,
+      "enemies": 8,
+      "lastSpawn": 74
+    },
+    {
+      "stage": 3,
+      "goal": "알바의 준비시간과 절구의 한 방 익히기",
+      "difficulty": 1,
+      "estimatedSeconds": 115,
+      "groups": 3,
+      "enemies": 10,
+      "lastSpawn": 83
+    },
+    {
+      "stage": 4,
+      "goal": "감기구름에 대비하고 시럽으로 시간 벌기",
+      "difficulty": 1,
+      "estimatedSeconds": 120,
+      "groups": 3,
+      "enemies": 12,
+      "lastSpawn": 81
+    },
+    {
+      "stage": 5,
+      "goal": "가운데 러시는 분무기로, 양끝은 약사로",
+      "difficulty": 2,
+      "estimatedSeconds": 135,
+      "groups": 4,
+      "enemies": 18,
+      "lastSpawn": 94
+    },
+    {
+      "stage": 6,
+      "goal": "붕대 적에 절구와 기본 약사 화력 집중",
+      "difficulty": 2,
+      "estimatedSeconds": 140,
+      "groups": 4,
+      "enemies": 14,
+      "lastSpawn": 96.5
+    },
+    {
+      "stage": 7,
+      "goal": "베테랑과 감속을 조합해 첫 종합전 넘기기",
+      "difficulty": 2,
+      "estimatedSeconds": 150,
+      "groups": 4,
+      "enemies": 20,
+      "lastSpawn": 111.5
+    },
+    {
+      "stage": 8,
+      "goal": "빠른 배달 적을 직원·시럽·냉찜질로 멈추기",
+      "difficulty": 2,
+      "estimatedSeconds": 175,
+      "groups": 4,
+      "enemies": 22,
+      "lastSpawn": 134
+    },
+    {
+      "stage": 9,
+      "goal": "중앙 포장갑옷을 돌돌이로 벗기고 관통하기",
+      "difficulty": 3,
+      "estimatedSeconds": 195,
+      "groups": 4,
+      "enemies": 23,
+      "lastSpawn": 133
+    },
+    {
+      "stage": 10,
+      "goal": "영업사원 방문 뒤 방어선을 다시 정리하기",
+      "difficulty": 3,
+      "estimatedSeconds": 190,
+      "groups": 5,
+      "enemies": 28,
+      "lastSpawn": 141
+    },
+    {
+      "stage": 11,
+      "goal": "보호막에는 집중 화력, 빠른 적에는 캡슐 연사",
+      "difficulty": 3,
+      "estimatedSeconds": 195,
+      "groups": 5,
+      "enemies": 29,
+      "lastSpawn": 157.5
+    },
+    {
+      "stage": 12,
+      "goal": "하원 러시 전 12초 동안 빈 레인을 보강하기",
+      "difficulty": 3,
+      "estimatedSeconds": 205,
+      "groups": 5,
+      "enemies": 33,
+      "lastSpawn": 150
+    },
+    {
+      "stage": 13,
+      "goal": "이웃 세 줄은 자동조제기, 양끝은 단일 공격",
+      "difficulty": 3,
+      "estimatedSeconds": 205,
+      "groups": 5,
+      "enemies": 30,
+      "lastSpawn": 168
+    },
+    {
+      "stage": 14,
+      "goal": "약봉투로 모인 적을 묶고 취객 속도에 대응하기",
+      "difficulty": 3,
+      "estimatedSeconds": 210,
+      "groups": 5,
+      "enemies": 33,
+      "lastSpawn": 165
+    },
+    {
+      "stage": 15,
+      "goal": "진상의 방해를 견디도록 공격 유닛 분산하기",
+      "difficulty": 4,
+      "estimatedSeconds": 220,
+      "groups": 6,
+      "enemies": 35,
+      "lastSpawn": 176
+    },
+    {
+      "stage": 16,
+      "goal": "휴대폰 적의 가속에 앞서 감속선을 준비하기",
+      "difficulty": 4,
+      "estimatedSeconds": 225,
+      "groups": 6,
+      "enemies": 38,
+      "lastSpawn": 186
+    },
+    {
+      "stage": 17,
+      "goal": "직원 바로 뒤 연고칼로 단단한 적 처리하기",
+      "difficulty": 4,
+      "estimatedSeconds": 235,
+      "groups": 6,
+      "enemies": 40,
+      "lastSpawn": 192
+    },
+    {
+      "stage": 18,
+      "goal": "덩치 집중 사격과 갑옷 해제선을 함께 유지하기",
+      "difficulty": 5,
+      "estimatedSeconds": 265,
+      "groups": 6,
+      "enemies": 42,
+      "lastSpawn": 207.5
+    },
+    {
+      "stage": 19,
+      "goal": "건물주 방문 뒤 다섯 레인 최종 혼합전 버티기",
+      "difficulty": 5,
+      "estimatedSeconds": 270,
+      "groups": 6,
+      "enemies": 44,
+      "lastSpawn": 213.5
+    },
+    {
+      "stage": 20,
+      "goal": "왕진상 세 페이즈에 맞춰 주력 레인 바꾸기",
+      "difficulty": 5,
+      "estimatedSeconds": 300,
+      "groups": 3,
+      "enemies": 20,
+      "lastSpawn": 65.2
+    }
+  ]
+}

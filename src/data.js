@@ -8,7 +8,7 @@ export const UNITS=[
  {id:'veteran',name:'베테랑약사',short:'베테랑',role:'2연사',desc:'18 × 2연사 · 1.6초 주기',cost:200,hp:300,cd:12,period:1.6,damage:18,unlock:7,art:5},
  {id:'roller',name:'돌돌이포장기',short:'돌돌이',role:'관통',desc:'최대 2마리 관통 24 · 2.6초 주기',cost:200,hp:400,cd:15,period:2.6,damage:24,unlock:9,art:6},
  {id:'dispenser',name:'자동조제기',short:'자동조제',role:'3레인',desc:'위·현재·아래 각각 12',cost:200,hp:500,cd:15,period:1.8,damage:12,unlock:13,art:7},
- {id:'spatula',name:'연고칼',short:'연고칼',role:'근접 화력',desc:'전방 1칸 · 0.8초마다 45',cost:125,hp:500,cd:10,period:.8,damage:45,unlock:17,art:8},
+ {id:'spatula',name:'연고칼',short:'연고칼',role:'근접 화력',desc:'직원 뒤에서도 공격 · 0.8초마다 45',cost:125,hp:500,cd:10,period:.8,damage:45,range:165,unlock:17,art:8},
  {id:'mortar',name:'유발유봉',short:'유발유봉',role:'곡사 고화력',desc:'고HP 적 우선 · 곡사 90 / 3.2초',cost:175,hp:400,cd:12,period:3.2,damage:90,unlock:3,art:0,artFile:'extra-units-v1.png'},
  {id:'spray',name:'에프킬라',short:'에프킬라',role:'근거리 부채꼴',desc:'앞쪽 2칸 · 이웃 레인까지 18',cost:125,hp:450,cd:12,period:1.2,damage:18,unlock:5,art:1,artFile:'extra-units-v1.png'},
  {id:'icepack',name:'냉찜질팩',short:'냉찜질팩',role:'1회용 빙결',desc:'2초 준비 · 주변 60 피해 + 2.5초 정지',cost:75,hp:300,cd:25,period:2,damage:60,unlock:8,art:2,artFile:'extra-units-v1.png'},
@@ -63,10 +63,41 @@ export const BOARD={x:176,y:225,col:100,row:76,cols:8,lanes:5,end:137,spawn:1130
 export const EARLY_CHAT={lines:['우박세트 주세요','후시딘 마데카솔 뭐가 좋아요?','이것좀 버려주세요','시럽병 10개만 주세요! 이거 공짜죠?','약사가 그런것도 몰라요?','시계약도 팔아요?','시원한데 쉬다가도 되죠?'],duration:3.5,gap:6};
 export const TEXT={pause:'일시정지',win:'영업 방어 성공!',lose:'오늘 영업은 여기까지…',lunch:'점심시간입니다! 직장인들이 몰려옵니다!',children:'어린이집 하원시간입니다!',sales:'원장님이 혈압약 바꾸신대요!',landlord:'우리 약대생 아들이 이번에 졸업을 하니 약국 빼주세요.',rush:'정신없는 사이 좀비들이 몰려옵니다!',boss2:'여기 책임자 누구예요?',boss3:'인터넷에는 그렇게 안 나오던데요?',ko:'…그럼 다른 약국 갈게요.',customer:'저기요, 약 좀 물어보려고 하는데요.',end:'…오늘도 영업합니다.',police:'112 출동! 전원 함께 가시죠!',complaints:['저번에는 해줬는데요?','약이 왜 이렇게 비싸요?','인터넷에서는 그렇게 안 나오던데요?','약사가 그런것도 몰라요?','시계약도 팔아요?','시원한데 쉬다가도 되죠?'],tutorial:['하늘에서 내려오는 돈을 눌러 50을 모은 뒤 판매대를 놓으세요.','판매대에서 나온 돈을 직접 터치해요!','돈을 100까지 모아 초보약사를 같은 줄에 배치해요.','잘했어요! 돈을 모으며 가운데 세 줄을 지켜요.','이제 다섯 줄! 각 레인에 약사를 준비하세요.']};
 export function rng(seed){return()=>{seed|=0;seed=seed+0x6D2B79F5|0;let t=Math.imul(seed^seed>>>15,1|seed);t=t+Math.imul(t^t>>>7,61|t)^t;return((t^t>>>14)>>>0)/4294967296;};}
-// Stage-specific pressure: enemy count / wave count / last wave start / within-wave gap.
-export const WAVE_PLANS=[null,null,[8,3,78,4],[10,3,88,3.5],[12,3,106,3],[18,4,138,2.4],[24,4,160,2.2],[28,4,180,2.1],[32,4,194,2],[35,4,216,2],[40,5,220,1.8],[43,5,232,1.7],[46,5,244,1.6],[49,5,254,1.5],[52,5,264,1.45],[55,6,274,1.4],[58,6,284,1.35],[62,6,294,1.3],[66,6,306,1.25],[70,6,330,1.3],[20,3,56,1.3]];
-export function makeWaves(stage,seed){if(stage.id===1)return [];let rand=rng(seed),[count,groups,last,gap]=WAVE_PLANS[stage.id],first=stage.id<6?18:22,list=[],done=0;let types=stage.types.filter(t=>t!=='armored');for(let g=0;g<groups;g++){let size=g===0?Math.min(4,Math.floor(count/groups)):g===groups-1?count-done:Math.floor((count-done)/(groups-g)),start=first+(last-first)*g/(groups-1);for(let i=0;i<size;i++){let lane=stage.id<=3&&g===0?2:stage.id<=5&&g===0?[1,2,3][i%3]:(i+g)%5;let type=types[Math.floor(rand()*types.length)];if(g===0)type=types.includes('normal')?'normal':types.includes('cold')?'cold':types.includes('office')?'office':[...types].filter(t=>!['complaint','delivery','bulky'].includes(t)).sort((a,b)=>(E[a].hp+(E[a].shield||0))-(E[b].hp+(E[b].shield||0)))[0]||types[0];if(type==='bulky'&&i%3!==0)type=types.find(t=>t!=='bulky')||type;if(['delivery','complaint','bulky'].includes(type)&&i%(stage.id<=9?4:3)!==0)type=[...types].filter(t=>!['delivery','complaint','bulky'].includes(t)).sort((a,b)=>(E[a].hp+(E[a].shield||0))-(E[b].hp+(E[b].shield||0)))[0]||type;if(stage.id===9&&g===1)lane=2;if(stage.id===5&&g===groups-1)type='office';list.push({at:start+i*gap,lane,type,group:g});done++;}}
- if(stage.id===12){let previous=list.filter(w=>w.group===groups-2),final=list.filter(w=>w.group===groups-1);let target=Math.max(...previous.map(w=>w.at))+12,shift=final[0].at-target;for(let w of final)w.at-=shift;}
- if(stage.requiredUnit){let limit=stage.id===9?2:stage.id===10?3:4,lastArmor=-Infinity,used=0;for(let i=Math.floor(list.length*.35);i<list.length&&used<limit;i++){let w=list[i];if(w.at>=lastArmor+14){w.type='armored';lastArmor=w.at;used++;}}}
- let counts=Array.from({length:5},(_,lane)=>list.filter(w=>w.lane===lane).length);for(let lane=0;lane<5;lane++)if(!counts[lane]){let w=[...list].reverse().find(w=>counts[w.lane]>1);counts[w.lane]--;w.lane=lane;counts[lane]++;}return list.sort((a,b)=>a.at-b.at);
+// Each group teaches a fixed composition; the seed varies later lane order only.
+const wave=(count,gap,types,lanes=null,rest=12)=>({count,gap,types:types.split(' '),lanes,rest});
+const profiles=[
+ ['돈을 모아 판매대와 초보약사 배치하기',1,105,[]],
+ ['직원 앞줄과 약사 뒷줄로 첫 방어 만들기',1,105,[wave(2,4,'normal',[2],14),wave(3,8,'normal',[1,2,3],14),wave(3,4,'normal',[0,2,4])]],
+ ['알바의 준비시간과 절구의 한 방 익히기',1,115,[wave(2,4,'normal',[2],14),wave(4,6,'normal',[2,2,1,3],14),wave(4,5,'normal',[0,1,3,4])]],
+ ['감기구름에 대비하고 시럽으로 시간 벌기',1,120,[wave(3,4,'normal',[2]),wave(4,5,'cold normal normal normal',[2,1,3,2]),wave(5,4,'normal normal cold normal normal',[0,1,2,3,4])]],
+ ['가운데 러시는 분무기로, 양끝은 약사로',2,135,[wave(3,4,'normal',[1,2,3]),wave(5,3,'office normal',[1,2,3]),wave(5,3,'cold normal office'),wave(5,2,'office')]],
+ ['붕대 적에 절구와 기본 약사 화력 집중',2,140,[wave(3,4,'normal',[1,2,3],14),wave(3,4,'bandage normal normal',[2,1,3],14),wave(4,3,'office normal bandage normal',[1,3,2,4],14),wave(4,2.5,'office normal normal office',[0,2,4,1])]],
+ ['베테랑과 감속을 조합해 첫 종합전 넘기기',2,150,[wave(3,4,'normal',[1,2,3],14),wave(5,3,'bandage normal office normal normal',[2,1,3,0,4],14),wave(6,3,'cold normal office normal normal normal',[2,0,4,1,3,2],14),wave(6,2.5,'bandage office normal cold normal normal',[2,0,4,1,3,2])]],
+ ['빠른 배달 적을 직원·시럽·냉찜질로 멈추기',2,175,[wave(4,4,'normal',[2,1,3,2],14),wave(5,5,'delivery normal normal',[2,1,3,2,4],14),wave(6,4,'bandage normal delivery',null,14),wave(7,3,'delivery normal bandage normal')]],
+ ['중앙 포장갑옷을 돌돌이로 벗기고 관통하기',3,195,[wave(4,4,'normal',[2,1,3,2],14),wave(5,4,'office normal',[2],14),wave(6,4,'bandage normal delivery',null,14),wave(8,3,'normal office bandage delivery')]],
+ ['영업사원 방문 뒤 방어선을 다시 정리하기',3,190,[wave(4,4,'office',[2,1,3,2]),wave(5,3,'bandage office'),wave(6,3,'cold office bandage'),wave(7,3,'delivery office bandage office'),wave(6,2.8,'bandage office cold')]],
+ ['보호막에는 집중 화력, 빠른 적에는 캡슐 연사',3,195,[wave(4,4,'normal',[2,1,3,2],14),wave(5,3.5,'basket normal',[2,1,3,2,4],14),wave(6,3.5,'delivery normal normal',null,14),wave(7,3,'bandage basket normal',null,14),wave(7,3,'basket normal normal bandage')]],
+ ['하원 러시 전 12초 동안 빈 레인을 보강하기',3,205,[wave(4,4,'normal',[2,1,3,2]),wave(6,3,'office cold normal'),wave(7,3,'basket normal office'),wave(8,2.5,'delivery normal cold normal'),wave(8,2.5,'office office basket normal')]],
+ ['이웃 세 줄은 자동조제기, 양끝은 단일 공격',3,205,[wave(4,4,'normal',[2,1,3,2],14),wave(5,4,'normal office',[1,2,3],14),wave(6,4,'basket normal',[1,2,3],14),wave(7,3.5,'bandage office',null,14),wave(8,3,'normal office basket bandage')]],
+ ['약봉투로 모인 적을 묶고 취객 속도에 대응하기',3,210,[wave(4,4,'office',[2,1,3,2]),wave(6,4,'drunk office',[1,2,3]),wave(7,3.5,'delivery office cold'),wave(8,3,'drunk cold office',[1,2,3]),wave(8,3,'drunk office office cold')]],
+ ['진상의 방해를 견디도록 공격 유닛 분산하기',4,220,[wave(4,4,'basket',[2,1,3,2]),wave(5,4,'complaint basket basket'),wave(6,3,'delivery bandage basket'),wave(6,3,'complaint bandage basket'),wave(7,3,'delivery basket bandage basket'),wave(7,3,'complaint bandage delivery basket')]],
+ ['휴대폰 적의 가속에 앞서 감속선을 준비하기',4,225,[wave(4,4,'normal',[2,1,3,2]),wave(6,4,'phone normal'),wave(6,3,'cold normal phone'),wave(7,3,'delivery normal phone'),wave(7,3,'phone cold normal'),wave(8,3,'phone delivery normal cold')]],
+ ['직원 바로 뒤 연고칼로 단단한 적 처리하기',4,235,[wave(4,4,'basket',[2,1,3,2]),wave(6,4,'drunk basket'),wave(7,3,'bandage basket phone'),wave(7,3,'phone drunk basket'),wave(8,3,'bandage drunk basket'),wave(8,3,'phone bandage basket drunk')]],
+ ['덩치 집중 사격과 갑옷 해제선을 함께 유지하기',5,265,[wave(4,4,'cold',[2,1,3,2]),wave(6,4,'bulky bandage cold cold'),wave(7,4,'delivery cold bandage'),wave(8,3.5,'bulky cold bandage cold'),wave(8,3,'delivery bandage cold'),wave(9,3,'bulky bandage cold cold')]],
+ ['건물주 방문 뒤 다섯 레인 최종 혼합전 버티기',5,270,[wave(4,4,'office',[2,1,3,2]),wave(6,4,'complaint office cold'),wave(7,4,'bulky office cold cold'),wave(8,3.5,'delivery office cold'),wave(9,3,'complaint bulky office office'),wave(10,3,'delivery cold office complaint office')]],
+ ['왕진상 세 페이즈에 맞춰 주력 레인 바꾸기',5,300,[wave(4,3,'normal',[2,1,3,2],8),wave(8,1.3,'normal office cold',null,8),wave(8,1.3,'bandage normal delivery normal')]]
+];
+export const WAVE_PLANS=profiles.map(p=>p[3]);
+for(let i=0;i<STAGES.length;i++){let [goal,difficulty,estimatedSeconds,groups]=profiles[i];Object.assign(STAGES[i],{goal,difficulty,estimatedSeconds,waveGroups:groups.length||3,duration:estimatedSeconds});}
+export function makeWaves(stage,seed){
+ if(stage.id===1)return [];
+ let random=rng(seed),list=[],groups=WAVE_PLANS[stage.id-1],start=stage.id<6?18:22;
+ for(let g=0;g<groups.length;g++){
+  let plan=groups[g],rotation=g<2?0:Math.floor(random()*5);
+  for(let i=0;i<plan.count;i++){let lane=plan.lanes?plan.lanes[i%plan.lanes.length]:(i+g+rotation)%5;list.push({at:start+i*plan.gap,lane,type:plan.types[i%plan.types.length],group:g});}
+  start=list.at(-1).at+plan.rest;
+ }
+ if(stage.requiredUnit){let limit=stage.id===9?2:stage.id===10?3:4,lastArmor=-Infinity,used=0;for(let i=Math.floor(list.length*.35);i<list.length&&used<limit;i++){let w=list[i];if(w.at>=lastArmor+14){w.type='armored';if(stage.id===9)w.lane=2;lastArmor=w.at;used++;}}}
+ let counts=Array.from({length:5},(_,lane)=>list.filter(w=>w.lane===lane).length);for(let lane=0;lane<5;lane++)if(!counts[lane]){let w=[...list].reverse().find(w=>counts[w.lane]>1);counts[w.lane]--;w.lane=lane;counts[lane]++;}
+ return list;
 }
